@@ -1,0 +1,38 @@
+.footer {
+    background-image: linear-gradient(0, rgba(17, 86, 178, 0.5), rgba(17, 86, 178, 0.5)),
+     url(../assets/ft-backgroud.jpg);
+    background-size: 100%;
+}
+.icon {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.contact {
+    flex-wrap: wrap;
+}
+.map {
+    width: 40%;
+    height: auto;
+
+}
+.information {
+    width: 40%;
+    font-size: 22px;
+}
+.bi {
+    font-size: 38px;
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+.title-size {
+    margin-top: 20px;
+}
+.title-sizing {
+    margin-top: 35px !important;
+}
+.title-sizing-a {
+    margin-top: 18px;
+}
