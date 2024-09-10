@@ -1,15 +1,10 @@
 </main>
 </div>
 <footer id="footer" role="contentinfo">
-<div class="footer py-3 ">
-  <!-- <div class="icon d-flex justify-content-center">
-    <div>
-       <img src="<?php bloginfo('template_url'); ?>/assets/logo.png" alt=""/>
-    </div>
+<div class="footer py-5 ">
   
-  </div> -->
-  <div class="contact d-flex justify-content-around">
-    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3135.5260989453227!2d106.71176264641367!3d20.840187032604582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7aaf9bd6d537%3A0x22be8ff047aabfc3!2zMThkIMSQLiBMw6ogSOG7k25nIFBob25nLCDEkOG6sW5nIEzDom0sIEjhuqNpIEFuLCBI4bqjaSBQaMOybmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1725788714874!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="contact d-flex justify-content-around flex-column flex-md-row">
+    <div class="map w-100"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3135.5260989453227!2d106.71176264641367!3d20.840187032604582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7aaf9bd6d537%3A0x22be8ff047aabfc3!2zMThkIMSQLiBMw6ogSOG7k25nIFBob25nLCDEkOG6sW5nIEzDom0sIEjhuqNpIEFuLCBI4bqjaSBQaMOybmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1725788714874!5m2!1svi!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
     </div>  
     <div class="information d-flex flex-column mb-3 align-item-center">
@@ -35,9 +30,11 @@
               Email:</p>
           </div>
             <div>
+            <a href="mailto:global@haiphuongshipping.com" class="d-flex">
               <p class="text-white">
-              Global@haiphuongshipping.com
+              global@haiphuongshipping.com
               </p>
+            </a>
             </div>
         </div>
         
@@ -49,9 +46,11 @@
               </p>
             </div>
               <div>
+              <a href="tel:+84 916.114.888" class="d-flex me-5">
                 <p class="text-white">
-                0916.114.888
+                +84916.114.888
                 </p>
+              </a>
               </div>
           </div>
           

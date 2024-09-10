@@ -3,22 +3,18 @@
      url(../assets/ft-backgroud.jpg);
     background-size: 100%;
 }
-.icon {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-.contact {
-    flex-wrap: wrap;
-}
-.map {
-    width: 45%;
-    height: auto;
 
+.map {
+    /* width: 45%; */
+    height: auto;
+    min-width: 452px;
+    flex-basis: 45%;
 }
 .information {
-    width: 45%;
+    /* width: 45%; */
     font-size: 22px;
+    min-width: 452px;
+    flex-basis: 45%;
 }
 .bi {
     font-size: 38px;
