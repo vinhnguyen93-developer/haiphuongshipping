@@ -12,12 +12,12 @@
     flex-wrap: wrap;
 }
 .map {
-    width: 40%;
+    width: 45%;
     height: auto;
 
 }
 .information {
-    width: 40%;
+    width: 45%;
     font-size: 22px;
 }
 .bi {
@@ -28,11 +28,19 @@ h1{
     font-size: 45px;
 }
 .title-size {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .title-sizing {
     margin-top: 35px !important;
 }
 .title-sizing-a {
     margin-top: 18px;
+}
+.size {
+    min-width: 200px;
+}
+.img-size {
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
 }
