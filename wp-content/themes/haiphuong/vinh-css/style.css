@@ -18,6 +18,10 @@
   height: 122px;
 }
 
+.navbar-logo {
+  width: 200px;
+}
+
 .navbar-item-hover {
   border-bottom: 2px solid white;
   transition: all 0.3s ease;
@@ -29,4 +33,49 @@
 
 .navbar-item-active {
   border-bottom: 2px solid #d19e37;
+}
+
+.cover-top-title {
+  bottom: 45px;
+  right: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.why {
+  background-color: #eff1f1;
+}
+
+.why-item {
+  background-color: #f6f5f4;
+  height: 160px;
+}
+
+.why-item-title {
+  color: #405e87;
+}
+
+.why-item-text {
+  color: #b7b6b6;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    height: 69px;
+  }
+
+  .navbar-logo {
+    width: 100px;
+  }
+
+  .cover-top-title {
+    top: 20px;
+    font-size: 15px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    letter-spacing: 1px;
+  }
 }
