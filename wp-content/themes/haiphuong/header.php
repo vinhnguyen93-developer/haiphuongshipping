@@ -15,7 +15,7 @@
 </head>
   <body>
     <div>
-      <header class="header">
+      <header class="header d-none d-md-block">
         <div class="container d-flex align-items-center justify-content-between h-100">
           <div class="d-flex">
             <a href="tel:+84 916.114.888" class="d-flex me-5">
@@ -41,10 +41,10 @@
       <nav class="navbar-container">
         <div class="container d-flex align-items-center justify-content-between">
           <a href="/">
-            <img width="200" src="<?php bloginfo('template_url'); ?>/assets/haiphuong_logo.jpg" alt="Hai Phuong Logo">
+            <img class="navbar-logo" src="<?php bloginfo('template_url'); ?>/assets/haiphuong_logo.jpg" alt="Hai Phuong Logo">
           </a>
 
-          <div class="d-flex align-items-center">
+          <div class="d-none d-md-flex align-items-center">
             <ul class="d-flex align-items-center">
               <li class="mx-3 pb-1 navbar-item-hover navbar-item-active">
                 <a href="/">Trang chủ</a>
