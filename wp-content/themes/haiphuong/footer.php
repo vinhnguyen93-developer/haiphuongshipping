@@ -10,7 +10,7 @@
     </div>  
     <div class="information d-flex flex-column mb-3 align-item-center">
       <div>
-        <H1 class="text-white">CÔNG TY TNHH VẬN TẢI BIỂN HẢI PHƯƠNG</H1>
+        <H1 class="text-white h-100">CÔNG TY TNHH VẬN TẢI BIỂN HẢI PHƯƠNG</H1>
       </div>
       <div class="d-flex d-flex flex-column mb-3">
         <div class="title-size d-flex align-items-center">
