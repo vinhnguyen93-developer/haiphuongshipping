@@ -9,6 +9,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <?php wp_head(); ?>
+<link href="<?php bloginfo('template_url'); ?>/slick.css" rel="stylesheet">
+<link href="<?php bloginfo('template_url'); ?>/slick-theme.css" rel="stylesheet">
 <link href="<?php bloginfo('template_url'); ?>/duy-css/style.css" rel="stylesheet">
 <link href="<?php bloginfo('template_url'); ?>/luan-css/style.css" rel="stylesheet">
 <link href="<?php bloginfo('template_url'); ?>/vinh-css/style.css" rel="stylesheet">
@@ -65,16 +67,70 @@
 
             <div class="d-flex align-items-center ms-3">
               <div class="me-2" role="button">
-                <img width="40" src="<?php bloginfo('template_url'); ?>/assets/united-kingdom.png" alt="United kingdom flag">
+                <img width="40" src="<?php bloginfo('template_url'); ?>/assets/vietnam.png" alt="vietnam flag">
               </div>
               <div role="button">
-                <img width="40" src="<?php bloginfo('template_url'); ?>/assets/vietnam.png" alt="vietnam flag">
+                <img width="40" src="<?php bloginfo('template_url'); ?>/assets/united-kingdom.png" alt="United kingdom flag">
               </div>
 
               <div class="ms-4" role="button">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </div>
             </div>
+          </div>
+
+          <div class="d-block d-md-none">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <i class="fs-2 fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header align-items-start">
+            <img width="140" src="<?php bloginfo('template_url'); ?>/assets/haiphuong_logo.jpg" alt="">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="my-3">
+                <a class="navbar-item-hover navbar-item-active" href="/">Trang chủ</a>
+              </li>
+              <li class="my-3">
+                <a class="navbar-item-hover" href="#">Giới thiệu</a>
+              </li>
+              <li class="my-3">
+                <a class="navbar-item-hover" href="/service">Dịch vụ</a>
+              </li>
+              <li class="my-3">
+                <a class="navbar-item-hover" href="#">Tin tức & tuyển dụng</a>
+              </li>
+              <li class="my-3">
+                <a class="navbar-item-hover" href="#">Đội tàu</a>
+              </li>
+              <li class="my-3">
+                <a class="navbar-item-hover" href="#">Đối tác</a>
+              </li>
+              <li class="my-3">
+                <a class="navbar-item-hover" href="#">Liên hệ</a>
+              </li>
+            </ul>
+
+            <div class="d-flex align-items-center">
+              <div class="me-2" role="button">
+                <img width="40" src="<?php bloginfo('template_url'); ?>/assets/vietnam.png" alt="vietnam flag">
+              </div>
+              <div role="button">
+                <img width="40" src="<?php bloginfo('template_url'); ?>/assets/united-kingdom.png" alt="United kingdom flag">
+              </div>
+            </div>
+
+            <form class="d-flex mt-2" role="search">
+              <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
           </div>
         </div>
       </nav>
