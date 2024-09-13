@@ -16,7 +16,7 @@
     <div class="row gx-0 gx-md-5 gy-md-0 gy-4">
       <div class="col-12 col-md-4">
         <div class="why-item p-2 d-flex align-items-center">
-          <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/gear.png" alt="Gear" >
+          <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/goal.png" alt="Goal" >
           <div>
             <h3 class="why-item-title fw-medium">Giải pháp vận chuyển</h3>
             <p class="why-item-text fw-light mt-2 mb-4">Lorem ipsum dolor amet, consectetuer</p>
@@ -29,7 +29,7 @@
       </div>
       <div class="col-12 col-md-4">
         <div class="why-item p-2 d-flex align-items-center">
-          <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/quality.png" alt="Quality" >
+          <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/analytic.png" alt="Analytic" >
           <div>
             <h3 class="why-item-title fw-medium">Chất lượng đảm bảo</h3>
             <p class="why-item-text fw-light mt-2 mb-4">Lorem ipsum dolor amet, consectetuer</p>
@@ -42,7 +42,7 @@
       </div>
       <div class="col-12 col-md-4">
         <div class="why-item p-2 d-flex align-items-center">
-          <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/secure-payment.png" alt="Secure payment" >
+          <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/focus.png" alt="Focus" >
           <div>
             <h3 class="why-item-title fw-medium">Điều kiện thanh toán</h3>
             <p class="why-item-text fw-light mt-2 mb-4">Lorem ipsum dolor amet, consectetuer</p>
@@ -61,7 +61,7 @@
   <div class="row gx-3 gy-md-0 gy-4 align-items-end">
     <div class="col-12 col-md-6">
       <div>
-        <img class="about-us-image" src="<?php bloginfo('template_url'); ?>/assets/hp-office.jpg" alt="Hải Phương Office">
+        <img class="about-us-image" src="<?php bloginfo('template_url'); ?>/assets/hp-office.png" alt="Hải Phương Office">
       </div>
     </div>
     <div class="col-12 col-md-6">
@@ -80,56 +80,58 @@
   </div>
 </section>
 
-<section class="pt-3">
-  <div class="d-flex justify-content-center mb-5">
-    <h2 class="section-title">Dịch vụ cung cấp</h2>
-  </div>
-
-  <div class="service-body">
-    <div class="h-100 d-flex flex-column flex-md-row justify-content-between px-4 py-5 service-content align-items-end">
-      <div class="service-item">
-        <h2 class="service-number mb-3">01</h2>
-        <h2 class="service-title lh-base">Vận tải hàng hóa trọn gói bằng đường biển</h2>
-        <p class="mt-4 service-text text-white fw-lighter lh-base">
-          Chúng tôi tự tin có thể cung cấp cho Quý khách hàng một dịch vụ trọn gói và xuyên suốt bao gồm vận chuyển bằng đường biển, xếp dỡ hàng hóa tại các đầu bến và vận chuyển đường bộ từ kho tới kho… với chi phí cạnh tranh nhất và đáp ứng tốt nhất thời gian phù hợp cho lô hàng.
-        </p>
-        <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-      </div>
-
-      <div class="service-item">
-        <h2 class="service-number mb-3">02</h2>
-        <h2 class="service-title lh-base">Thuê tàu và môi giới hàng hải</h2>
-        <p class="mt-4 service-text text-white fw-lighter lh-base">
-          Đội ngũ nhân sự với trên 20 năm kinh nghiệm trong lĩnh vực khai thác và thuê tàu nội địa và quốc tế tại những công ty vận tải biển có uy tín và bề dầy lịch sự của ngành Hàng hải Việt nam sẵn sàng kết nối các nhu cầu của khách hàng trong việc tìm hàng, tìm tàu nhanh chống với những đối tác uy tín và phù hợp nhất.
-        </p>
-        <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-      </div>
-
-      <div class="service-item">
-        <h2 class="service-number mb-3">03</h2>
-        <h2 class="service-title lh-base">Cung ứng thuyền viên</h2>
-        <p class="mt-4 service-text text-white fw-lighter lh-base">
-          Ngoài những dịch vụ liên quan đến vận tải và dịch vụ hàng hải, công ty chúng tôi cũng nhận cung ứng thuyền viên có kinh nghiệm và kiến thức phục vụ trên các phương tiện vận tải thủy, vận tải biển trong nước và ngoài nước, đáp ứng yêu cầu cao nhất của khách hàng.
-        </p>
-        <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-      </div>
-
-      <div class="service-item">
-        <h2 class="service-number mb-3">04</h2>
-        <h2 class="service-title lh-base">Tư vấn hàng hải</h2>
-        <p class="mt-4 service-text text-white fw-lighter lh-base">
-          Bằng những thông tin, kinh nghiệm và kiến thức đúc kết trong nhiều năm của những Chuyên viên, Thuyền máy trưởng trong đội ngũ nhân sự, chúng tôi luôn sẵn sàng tư vấn và hỗ trợ khách hàng về những vấn đề liên quan đến thương vụ, vận chuyển, hành hải vận tải biển trong và ngoài nước .với những đối tác uy tín và phù hợp nhất.
-        </p>
-        <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-      </div>
-
-      <div class="service-item">
-        <h2 class="service-number mb-3">05</h2>
-        <h2 class="service-title lh-base">Đại lý và cung ứng hàng hải</h2>
-        <p class="mt-4 service-text text-white fw-lighter lh-base">
-          Dịch vụ đại lý và cung ứng hàng hải cho các phương tiện thủy ghé các cảng biển cũng là một thế mạnh của chúng tôi với một mạng lưới quan hệ rộng khắp với chính quyền cảng các cảng, các đơn vị cung ứng, dịch vụ, sửa chữa uy tín và kinh nghiệm.
-        </p>
-        <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
+<section class="mt-3 service">
+  <div class="service-layer pt-4">
+    <div class="d-flex justify-content-center mb-5">
+      <h2 class="section-title text-white">Dịch vụ cung cấp</h2>
+    </div>
+  
+    <div class="service-body">
+      <div class="h-100 d-flex flex-column flex-md-row justify-content-between px-4 py-5 service-content align-items-end">
+        <div class="service-item">
+          <h2 class="service-number mb-3">01</h2>
+          <h2 class="service-title lh-base">Vận tải hàng hóa trọn gói bằng đường biển</h2>
+          <p class="mt-4 service-text text-white fw-lighter lh-base">
+            Chúng tôi tự tin có thể cung cấp cho Quý khách hàng một dịch vụ trọn gói và xuyên suốt bao gồm vận chuyển bằng đường biển, xếp dỡ hàng hóa tại các đầu bến và vận chuyển đường bộ từ kho tới kho… với chi phí cạnh tranh nhất và đáp ứng tốt nhất thời gian phù hợp cho lô hàng.
+          </p>
+          <i class="service-angles w-100 mt-4 text-white fa-solid fa-angles-right"></i>
+        </div>
+  
+        <div class="service-item">
+          <h2 class="service-number mb-3">02</h2>
+          <h2 class="service-title lh-base">Thuê tàu và môi giới hàng hải</h2>
+          <p class="mt-4 service-text text-white fw-lighter lh-base">
+            Đội ngũ nhân sự với trên 20 năm kinh nghiệm trong lĩnh vực khai thác và thuê tàu nội địa và quốc tế tại những công ty vận tải biển có uy tín và bề dầy lịch sự của ngành Hàng hải Việt nam sẵn sàng kết nối các nhu cầu của khách hàng trong việc tìm hàng, tìm tàu nhanh chống với những đối tác uy tín và phù hợp nhất.
+          </p>
+          <i class="service-angles w-100 mt-4 text-white fa-solid fa-angles-right"></i>
+        </div>
+  
+        <div class="service-item">
+          <h2 class="service-number mb-3">03</h2>
+          <h2 class="service-title lh-base">Cung ứng thuyền viên</h2>
+          <p class="mt-4 service-text text-white fw-lighter lh-base">
+            Ngoài những dịch vụ liên quan đến vận tải và dịch vụ hàng hải, công ty chúng tôi cũng nhận cung ứng thuyền viên có kinh nghiệm và kiến thức phục vụ trên các phương tiện vận tải thủy, vận tải biển trong nước và ngoài nước, đáp ứng yêu cầu cao nhất của khách hàng.
+          </p>
+          <i class="service-angles w-100 mt-4 text-white fa-solid fa-angles-right"></i>
+        </div>
+  
+        <div class="service-item">
+          <h2 class="service-number mb-3">04</h2>
+          <h2 class="service-title lh-base">Tư vấn hàng hải</h2>
+          <p class="mt-4 service-text text-white fw-lighter lh-base">
+            Bằng những thông tin, kinh nghiệm và kiến thức đúc kết trong nhiều năm của những Chuyên viên, Thuyền máy trưởng trong đội ngũ nhân sự, chúng tôi luôn sẵn sàng tư vấn và hỗ trợ khách hàng về những vấn đề liên quan đến thương vụ, vận chuyển, hành hải vận tải biển trong và ngoài nước .với những đối tác uy tín và phù hợp nhất.
+          </p>
+          <i class="service-angles w-100 mt-4 text-white fa-solid fa-angles-right"></i>
+        </div>
+  
+        <div class="service-item">
+          <h2 class="service-number mb-3">05</h2>
+          <h2 class="service-title lh-base">Đại lý và cung ứng hàng hải</h2>
+          <p class="mt-4 service-text text-white fw-lighter lh-base">
+            Dịch vụ đại lý và cung ứng hàng hải cho các phương tiện thủy ghé các cảng biển cũng là một thế mạnh của chúng tôi với một mạng lưới quan hệ rộng khắp với chính quyền cảng các cảng, các đơn vị cung ứng, dịch vụ, sửa chữa uy tín và kinh nghiệm.
+          </p>
+          <i class="service-angles w-100 mt-4 text-white fa-solid fa-angles-right"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -188,14 +190,14 @@
           </div>
          
           <div>
-            <h1 class="mb-3 text-uppercase">ocean gold</h1>
-            <p class="fw-lighter lh-base text-uppercase">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
-            <p class="fw-lighter lh-base text-uppercase">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
-            <p class="fw-lighter lh-base text-uppercase">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
-            <p class="fw-lighter lh-base text-uppercase">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
-            <p class="fw-lighter lh-base text-uppercase">h.cover type: mac(folding)</p>
-            <p class="fw-lighter lh-base text-uppercase">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
-            <p class="fw-lighter lh-base text-uppercase">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
+            <h1 class="mb-3 text-uppercase fs-2">ocean gold</h1>
+            <p class="fw-lighter lh-base text-uppercase fs-5">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">h.cover type: mac(folding)</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
           </div>
         </div>
       </div>
@@ -206,14 +208,14 @@
           </div>
          
           <div>
-            <h1 class="mb-3 text-uppercase">m/v sun gold</h1>
-            <p class="fw-lighter lh-base text-uppercase">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
-            <p class="fw-lighter lh-base text-uppercase">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
-            <p class="fw-lighter lh-base text-uppercase">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
-            <p class="fw-lighter lh-base text-uppercase">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
-            <p class="fw-lighter lh-base text-uppercase">h.cover type: mac(folding)</p>
-            <p class="fw-lighter lh-base text-uppercase">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
-            <p class="fw-lighter lh-base text-uppercase">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
+            <h1 class="mb-3 text-uppercase fs-2">m/v sun gold</h1>
+            <p class="fw-lighter lh-base text-uppercase fs-5">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">h.cover type: mac(folding)</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
           </div>
         </div>
       </div>
@@ -224,14 +226,14 @@
           </div>
          
           <div>
-            <h1 class="mb-3 text-uppercase">m/v new gold</h1>
-            <p class="fw-lighter lh-base text-uppercase">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
-            <p class="fw-lighter lh-base text-uppercase">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
-            <p class="fw-lighter lh-base text-uppercase">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
-            <p class="fw-lighter lh-base text-uppercase">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
-            <p class="fw-lighter lh-base text-uppercase">h.cover type: mac(folding)</p>
-            <p class="fw-lighter lh-base text-uppercase">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
-            <p class="fw-lighter lh-base text-uppercase">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
+            <h1 class="mb-3 text-uppercase fs-2">m/v new gold</h1>
+            <p class="fw-lighter lh-base text-uppercase fs-5">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">h.cover type: mac(folding)</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
           </div>
         </div>
       </div>
@@ -242,14 +244,14 @@
           </div>
          
           <div>
-            <h1 class="mb-3 text-uppercase">m/v t&t gold</h1>
-            <p class="fw-lighter lh-base text-uppercase">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
-            <p class="fw-lighter lh-base text-uppercase">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
-            <p class="fw-lighter lh-base text-uppercase">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
-            <p class="fw-lighter lh-base text-uppercase">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
-            <p class="fw-lighter lh-base text-uppercase">h.cover type: mac(folding)</p>
-            <p class="fw-lighter lh-base text-uppercase">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
-            <p class="fw-lighter lh-base text-uppercase">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
+            <h1 class="mb-3 text-uppercase fs-2">m/v t&t gold</h1>
+            <p class="fw-lighter lh-base text-uppercase fs-5">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">h.cover type: mac(folding)</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
+            <p class="fw-lighter lh-base text-uppercase fs-5">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
           </div>
         </div>
       </div>

@@ -92,15 +92,21 @@
   background-color: #cea33cd8;
 }
 
-.service-body {
-  height: 480px;
+.service {
   background-image: url('../assets/bg-service.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.service-content {
+.service-layer {
   background-color: #3956a0b0;
+}
+
+.service-body {
+  height: 420px;
+}
+
+.service-content {
   column-gap: 40px;
 }
 
@@ -139,6 +145,7 @@
 
 .service-item:hover > .service-angles {
   color: #cea33c !important;
+  animation: fade_in_angles 1s;
 }
 
 .new-image {
@@ -218,11 +225,23 @@
 @keyframes fade_in_show {
   0% {
     opacity: 0;
-    transform: scale(0);
+    transform: translateX(-100%);
   }
 
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade_in_angles {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
