@@ -55,7 +55,7 @@
                 <a href="#">Giới thiệu</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover">
-                <a href="#">Dịch vụ</a>
+                <a href="/service">Dịch vụ</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover">
                 <a href="#">Tiện ích</a>
