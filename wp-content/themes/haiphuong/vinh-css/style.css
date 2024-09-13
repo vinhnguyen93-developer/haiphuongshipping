@@ -147,6 +147,7 @@
 
 .service-item:hover > .service-text {
   max-height: 100%;
+  opacity: 1;
   animation: fade_in_show 1s;
 }
 
