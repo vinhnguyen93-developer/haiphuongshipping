@@ -137,6 +137,48 @@ register_sidebar( array(
 'after_title' => '</h3>',
 ) );
 }
+
+/*Custom Post type start*/
+function cw_post_type_service() {
+	$supports = array(
+		'title', // post title
+		'editor', // post content
+		'author', // post author
+		'thumbnail', // featured images
+		'excerpt', // post excerpt
+		'custom-fields', // custom fields
+		'revisions', // post revisions
+		'post-formats', // post form
+	);
+	$labels = array(
+		'name' => _x('SERVICE', 'service'),
+		'singular_name' => _x('SERVICE', 'singular'),
+		'menu_name' => _x('SERVICE', 'admin menu'),
+		'name_admin_bar' => _x('SERVICE', 'admin bar'),
+		'add_new' => _x('Add new', 'add new'),
+		'add_new_item' => __('Add new item'),
+		'new_item' => __('New item'),
+		'edit_item' => __('Edit item'),
+		'view_item' => __('View item'),
+		'all_items' => __('All item'),
+		'search_items' => __('Search item'),
+		'not_found' => __('Not found'),
+		);
+	$args = array(
+		'supports' => $supports,
+		'labels' => $labels,
+		'public' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'service'),
+		'has_archive' => true,
+		'hierarchical' => false,
+		'menu_position' => 6,
+		'taxonomies' => array('category', 'post_tag'),
+	);
+	register_post_type('service', $args);
+}
+add_action('init', 'cw_post_type_service');
+
 add_action( 'wp_head', 'blankslate_pingback_header' );
 function blankslate_pingback_header() {
 if ( is_singular() && pings_open() ) {
