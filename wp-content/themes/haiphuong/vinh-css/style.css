@@ -23,8 +23,13 @@
 }
 
 .navbar-item-hover {
+  color: #2467c7;
   border-bottom: 2px solid white;
   transition: all 0.3s ease;
+}
+
+.navbar-item-hover a {
+  color: #2467c7;
 }
 
 .navbar-item-hover:hover {
@@ -126,8 +131,10 @@
 }
 
 .service-text {
-  display: none;
+  max-height: 0;
+  opacity: 0;
   font-size: 16px;
+  transition: max-height 1.2s ease;
 }
 
 .service-angles {
@@ -135,17 +142,17 @@
 }
 
 .service-angles {
-  transition: all 0.25s linear;
+  transition: all 0.5s linear;
 }
 
 .service-item:hover > .service-text {
-  display: block;
+  max-height: 100%;
   animation: fade_in_show 1s;
 }
 
 .service-item:hover > .service-angles {
   color: #cea33c !important;
-  animation: fade_in_angles 1s;
+  transform: rotate(90deg);
 }
 
 .new-image {
@@ -163,7 +170,62 @@
 }
 
 .ship-image {
-  width: 36vw;
+  width: 30vw;
+}
+
+.ship-item-text {
+  font-size: 20px;
+}
+
+.comments {
+  background-image: url('../assets/bg-comment.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.comments-body {
+  background-color: #2f427feb;
+  padding: 30px 0;
+}
+
+.comments-slide {
+  width: 45vw;
+}
+
+.comments-content {
+  background-color: #4c5c91;
+  padding: 10px 120px 10px 40px;
+  position: relative;
+}
+
+.comments-quote {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 36px;
+  color: #fac14b;
+}
+
+.comments-angles {
+  color: #fac14b;
+  font-size: 30px;
+  width: 100%;
+  text-align: end;
+}
+
+.comments-text {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.comments .slick-slider .slick-track {
+  background-color: #4c5c91;
+}
+
+.client-item img {
+  height: 86px;
+  object-fit: contain;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
@@ -210,7 +272,8 @@
   }
 
   .service-text {
-    display: block;
+    max-height: 100%;
+    opacity: 1;
   }
 
   .new-image {
@@ -219,6 +282,22 @@
 
   .ship-image {
     width: 100%;
+  }
+
+  .ship-item-text {
+    font-size: 16px;
+  }
+
+  .comments-slide {
+    width: 93vw;
+  }
+
+  .comments-content {
+    padding-right: 10px;
+  }
+
+  .comments-text {
+    font-size: 22px;
   }
 }
 
