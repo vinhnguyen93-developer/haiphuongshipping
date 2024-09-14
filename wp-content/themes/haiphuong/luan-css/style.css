@@ -1,3 +1,15 @@
 .text-blue {
     color: #2260BD;
 }
+
+.center-title {
+    bottom: 50%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.top-title{
+    top: 30%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
