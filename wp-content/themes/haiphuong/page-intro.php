@@ -8,7 +8,7 @@
     <div class="position-relative text-center">
         <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/intro-bg.png" alt="Hai Phuong Shipping" >
         <h2 class="fs-1 position-absolute text-white top-title w-100">Giới thiệu</h2>
-        <h3 class="fs-3 position-absolute text-white top-title w-100 mt-5">HPS - Chia sẻ hết mình - Phục vụ tận tình</h3>
+        <h3 class="fs-3 position-absolute text-white top-title w-100 mt-5 sp-top-10">HPS - Chia sẻ hết mình - Phục vụ tận tình</h3>
     </div>
     <div class="w-75 m-auto py-5 d-flex flex-column lh-base">
         <h2 class="text-blue fw-bold fs-4">CÔNG TY TNHH VẬN TẢI BIỂN HẢI PHƯƠNG</h2>
