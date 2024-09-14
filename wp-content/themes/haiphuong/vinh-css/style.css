@@ -1,0 +1,327 @@
+.header {
+  background-color: #2155aa;
+  height: 69px;
+}
+
+.header-icon-facebook {
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+  color: white;
+  background-color: #999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-container {
+  height: 122px;
+}
+
+.navbar-logo {
+  width: 200px;
+}
+
+.navbar-item-hover {
+  color: #2467c7;
+  border-bottom: 2px solid white;
+  transition: all 0.3s ease;
+}
+
+.navbar-item-hover a {
+  color: #2467c7;
+}
+
+.navbar-item-hover:hover {
+  border-bottom: 2px solid #d19e37;
+}
+
+.navbar-item-active {
+  border-bottom: 2px solid #d19e37;
+}
+
+.cover-top-title {
+  bottom: 45px;
+  right: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.why {
+  background-color: #eff1f1;
+}
+
+.why-item {
+  background-color: #f6f5f4;
+  height: 160px;
+}
+
+.why-item-title {
+  color: #405e87;
+}
+
+.why-item-text {
+  color: #b7b6b6;
+  font-size: 14px;
+}
+
+.about-us {
+  background-color: #faffff;
+}
+
+.about-us-image {
+  width: 425px;
+  height: 500px;
+}
+
+.about-us-title::after {
+  width: 20%;
+  left: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.about-us-sub-title {
+  color: #415f8a;
+  font-size: 18px;
+}
+
+.about-us-btn {
+  background-color: #cea33c;
+  font-size: 20px;
+  transition: all 0.25 linear;
+}
+
+.about-us-btn:hover {
+  background-color: #cea33cd8;
+}
+
+.service {
+  background-image: url('../assets/bg-service.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-layer {
+  background-color: #3956a0b0;
+}
+
+.service-body {
+  height: 420px;
+}
+
+.service-content {
+  column-gap: 40px;
+}
+
+.service-item {
+  width: 20%;
+}
+
+.service-number {
+  color: #cea33c;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.service-title {
+  color: #faffff;
+  font-size: 20px;
+}
+
+.service-text {
+  max-height: 0;
+  opacity: 0;
+  font-size: 16px;
+  transition: max-height 1.2s ease;
+}
+
+.service-angles {
+  font-size: 22px;
+}
+
+.service-angles {
+  transition: all 0.5s linear;
+}
+
+.service-item:hover > .service-text {
+  max-height: 100%;
+  opacity: 1;
+  animation: fade_in_show 1s;
+}
+
+.service-item:hover > .service-angles {
+  color: #cea33c !important;
+  transform: rotate(90deg);
+}
+
+.new-image {
+  width: 100%;
+  height: 16vw;
+}
+
+.new-title {
+  color: #405e87;
+  font-size: 18px;
+}
+
+.new-btn {
+  color: #405e87;
+}
+
+.ship-image {
+  width: 30vw;
+}
+
+.ship-item-text {
+  font-size: 20px;
+}
+
+.comments {
+  background-image: url('../assets/bg-comment.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.comments-body {
+  background-color: #2f427feb;
+  padding: 30px 0;
+}
+
+.comments-slide {
+  width: 45vw;
+}
+
+.comments-content {
+  background-color: #4c5c91;
+  padding: 10px 120px 10px 40px;
+  position: relative;
+}
+
+.comments-quote {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 36px;
+  color: #fac14b;
+}
+
+.comments-angles {
+  color: #fac14b;
+  font-size: 30px;
+  width: 100%;
+  text-align: end;
+}
+
+.comments-text {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.comments .slick-slider .slick-track {
+  background-color: #4c5c91;
+}
+
+.client-item img {
+  height: 86px;
+  object-fit: contain;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    height: 69px;
+  }
+
+  .navbar-logo {
+    width: 100px;
+  }
+
+  .cover-top-title {
+    top: 20px;
+    font-size: 15px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    letter-spacing: 1px;
+  }
+
+  .about-us-image {
+    width: 100%;
+    height: 480px;
+  }
+
+  .about-us-title::after {
+    width: 26%;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-body {
+    height: auto;
+  }
+
+  .service-content {
+    row-gap: 30px;
+  }
+
+  .service-item {
+    width: 100%;
+  }
+
+  .service-text {
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .new-image {
+    height: 100%;
+  }
+
+  .ship-image {
+    width: 100%;
+  }
+
+  .ship-item-text {
+    font-size: 16px;
+  }
+
+  .comments-slide {
+    width: 93vw;
+  }
+
+  .comments-content {
+    padding-right: 10px;
+  }
+
+  .comments-text {
+    font-size: 22px;
+  }
+}
+
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade_in_angles {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
