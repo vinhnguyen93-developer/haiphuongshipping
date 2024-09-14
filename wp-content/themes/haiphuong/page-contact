@@ -5,11 +5,36 @@
  ?>
  <?php get_header(); ?>
 <div>
-    <div>
-        //ảnh intro ở đây
+    <div class="position-relative text-center">
+        <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/intro-bg.png" alt="Hai Phuong Shipping" >
+        <h2 class="position-absolute text-white cover-top-title">LIÊN HỆ</h2>
     </div>
     <div>
-        //phần giới thiệu ở đây
+        <p>
+            Nếu Quý khách hàng, đối tác và nhà đầu tư có bất kỳ câu hỏi hoặc yêu cầu thắc mắc nào liên quan đến dịch vụ của công ty chúng tôi, xin vui lòng liên hệ với chúng tôi theo thông tin sau:
+        </p>
+        <h1>CÔNG TY TNHH VẬN TẢI BIỂN HẢI PHƯƠNG</h1>
+        <p>
+            ・ Địa chỉ giao dịch: Số 54 lô 18D Lê Hồng Phong, Phường Đằng Lâm, Quận Hải An, Thành phố Hải Phòng, Việt Nam
+        </p>
+        <p>
+            ・ Email: global@haiphuongshipping.com
+        </p>
+        <p class="text-blue">
+            ・ Điện thoại: +84 916.114.888
+        </p>
+        <p class="text-blue">
+            ・ Điện thoại các phòng ban:
+        </p>
+        <p>
+            - Phòng khai thác: +84 912.859.925 - Mr An
+        </p>
+        <p>
+            - Phòng thuyền viên: +84 917.701.618 - Mr Trung
+        </p>
+        <p>
+            - Hotline: +84 945.776.999 - Ms Thúy
+        </p>
     </div>
 </div>
 <?php get_footer(); ?>
