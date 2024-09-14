@@ -223,6 +223,15 @@
   background-color: #4c5c91;
 }
 
+.new-page-image {
+  height: 600px;
+  object-fit: cover;
+}
+
+.new-page-item-image {
+  height: 25vw;
+}
+
 .news-page-title {
   right: 40px;
   color: #2260db;
@@ -323,6 +332,23 @@
 
   .comments-text {
     font-size: 22px;
+  }
+
+  .new-page-image {
+    height: 170px;
+  }
+
+  .new-page-item-image {
+    height: 100%;
+  }
+
+  .news-page-title {
+    font-size: 22px;
+    right: 15px;
+  }
+
+  .news-page-title::before {
+    width: 100%;
   }
 }
 

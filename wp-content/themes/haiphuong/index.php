@@ -8,6 +8,11 @@ $service_query = new WP_Query(array(
   'order'          => 'ASC',
 ));
 
+$news_query = new WP_Query(array(
+  'post_type' => 'news',
+  'posts_per_page' => 3,
+));
+
 ?>
 
 <section>
@@ -222,36 +227,26 @@ $service_query = new WP_Query(array(
   </div>
 
   <div class="row gx-3 gy-4">
+    <?php 
+    if($news_query -> have_posts()):
+      while($news_query -> have_posts()): $news_query -> the_post();
+        $news_title = get_the_title();
+        $news_image_src = get_field('image', get_the_ID());
+    ?>
     <div class="col-12 col-md-4">
       <div>
-        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-1.png" alt="">
-        <h2 class="m-3 new-title fw-bold lh-base">HPS nâng cấp hạng tàu mới</h2>
+        <img class="new-image" src="<?php echo $news_image_src; ?>" alt="">
+        <h2 class="m-3 new-title fw-bold lh-base"><?php echo $news_title; ?></h2>
         <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
           Xem thêm
           <i class="fa-solid fa-angle-right"></i>
         </a>
       </div>
     </div>
-    <div class="col-12 col-md-4">
-      <div>
-        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-2.png" alt="">
-        <h2 class="m-3 new-title fw-bold lh-base">Định hướng xây dựng HPS năm 2025</h2>
-        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
-          Xem thêm
-          <i class="fa-solid fa-angle-right"></i>
-        </a>
-      </div>
-    </div>
-    <div class="col-12 col-md-4">
-      <div>
-        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-3.png" alt="">
-        <h2 class="m-3 new-title fw-bold lh-base">Tuyển dụng tháng 9 tại Hải Phòng</h2>
-        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
-          Xem thêm
-          <i class="fa-solid fa-angle-right"></i>
-        </a>
-      </div>
-    </div>
+    <?php 
+      endwhile;
+    endif;
+    ?>
   </div>
 </section>
 
