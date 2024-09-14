@@ -1,4 +1,16 @@
 $(document).ready(function () {
+
+  // duy-js-modal
+  const buyShows = document.querySelectorAll('.js-show')
+    const modal = document.querySelector('.modal')
+    function showShow() {
+        modal.classList.add('sv-modal-open')
+    }
+
+    for (const buyShow of buyShows) {
+        buyShow.addEventListener('click',showShow)
+    }
+
   $('.comments-slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

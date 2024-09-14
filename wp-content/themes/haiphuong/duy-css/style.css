@@ -5,112 +5,165 @@
       rgba(17, 86, 178, 0.5),
       rgba(17, 86, 178, 0.5)
     ),
-    url(../assets/ft-backgroud.jpg);
+     url(../assets/ft-backgroud.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .contact {
-  gap: 30px;
-  padding: 0px 10px 0px 10px;
+    gap: 30px;
+    padding: 0px 10px 0px 10px;
 }
 .map {
-  /* width: 45%; */
-  height: 200%;
-  /* min-width: 452px; */
-  flex-basis: 47%;
-  border: 1px solid #ddd;
+    /* width: 45%; */
+    height: 200%;
+    /* min-width: 452px; */
+    flex-basis: 47%;
+    border: 1px solid #ddd;
+      
 }
 .information {
-  /* width: 45%; */
-  font-size: 22px;
-  /* min-width: 452px; */
-  flex-basis: 45%;
-  font-size: 15px;
-  gap: 25px;
-  height: 300px;
+    /* width: 45%; */
+    font-size: 22px;
+    /* min-width: 452px; */
+    flex-basis: 45%;
+    font-size: 15px;
+    gap: 25px;
+    height: 300px;
 }
 .bi {
-  /* font-size: 38px; */
+    /* font-size: 38px; */
 }
-h1 {
-  /* margin-bottom: 20px; */
-  font-size: 28px;
-}
+.footer-h1 {
+    /* margin-bottom: 20px; */
+    font-size: 28px;
+}   
 .title-size {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .size {
-  min-width: 95px;
+    min-width: 95px;
 }
 .img-size {
-  height: 20px;
-  width: 20px;
-  margin-right: 5px;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
 }
 @media (min-width: 425px) {
   .size {
-    min-width: 120px;
-  }
+        min-width: 120px;
+    }
+
 }
 
 @media (min-width: 770px) {
-  h1 {
-    font-size: 45px;
-  }
-  p {
-    font-size: 24px;
-  }
-  .size {
-    min-width: 200px;
-  }
+    .footer-h1 {
+        font-size: 45px;
+    }
+    .footer-p {
+        font-size: 24px;
+    }
+    .size {
+        min-width: 200px;
+    }
+    
 }
 /* service */
+.d-service {
+    padding: 0px 10px 0px 10px;
+}
 .sv-conten {
-  height: 535px;
-  width: 100%;
-  background-image: url(../assets/svconten.png);
-  background-size: 100%;
-  gap: 10px;
-  background-repeat: no-repeat;
+    height: 40vw;
+    width: 100%;
+    background-image: url(../assets/svconten.png);
+    background-size: 100%;
+    gap: 10px;
+    background-repeat: no-repeat;
 }
-.sv-conten-title {
-  height: 300px;
-  width: 450px;
-  margin-right: 20px;
-  background: radial-gradient(
-    rgba(198, 233, 240, 1),
-    rgba(198, 233, 240, 0) 75%
-  );
-  border-radius: 50%;
-  margin-bottom: 100px;
+.sv-conten-title {  
+    height: 20vw;
+    width: 54vw;
+    margin-right: 20px;
+    background: radial-gradient(
+        rgba(198, 233, 240, 1),
+        rgba(198, 233, 240, 0) 75%
+    );
+    border-radius: 50%;
 }
-h2 {
-  font-size: 60px;
-  color: #0852c2;
-  padding-right: 130px;
-  margin-bottom: 25px;
+.sv-h2 {
+    font-size: 8vw;
+    color: #0852c2;
+    padding-right: 2vw;
+    margin-bottom: 2vw;
+    font-family: Oswald Bold Bold;
+    font-weight: 600;
 }
 .hps {
   color: #064198;
+  font-size: 3vw;
+  font-weight: 700;
 }
 
-.service {
-  margin-top: 100px;
+.d-service {
+    margin-top: 5vw;
 }
 .sv-img {
-  width: 810px;
-  height: 555px;
+    width: 100%;
+    height: auto;
   /* margin-bottom: 150px; */
 }
 .sv-button {
-  background-color: transparent;
-  border: none;
-  margin: 50px 0 50px 0;
-  font-size: 30px;
-  color: #2260bd;
-  outline: none;
-  cursor: pointer;
+    background-color: transparent;
+    border: none;
+    margin: 50px 0 50px 0;
+    font-size: 20px;
+    color: #2260bd;
+    outline: none;
+    cursor: pointer;
 }
+
 .sv-2 {
-  margin: 20px 0 100px 0;
+    margin: 20px 0 100px 0;
+}
+@media (min-width:768px) {
+    .sv-conten-title{
+        width: 54vw;
+    }
+    .sv-h2{
+        font-size: 80px;
+        margin-bottom: 10px;
+    }
+    .hps{
+        font-size: 25px;
+    }
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(241, 244, 248, 0.5);
+    padding: 0 20px;
+    display: none;
+
+}
+.modal-conten{
+    background: #FFFFFF;
+    width: 900px;
+    /* max-width: calc(100%-50px); */
+    min-height: 500px;
+    position: relative;
+    border-radius: 40px;
+}
+.sv-modal-open{
+    display: flex;
+}
+.button-modal {
+    background: #CEA33C;
+    color: #FFFFFF;
+    height: 35px;
+    width: 120px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-weight: 500;
 }
