@@ -1,9 +1,9 @@
 <?php
 /*
- Template Name: intro
+ Template Name: Intro
  */
- ?>
- <?php get_header(); ?>
+?>
+<?php get_header(); ?>
 <div>
     <div class="position-relative text-center">
         <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/intro-bg.png" alt="Hai Phuong Shipping" >
