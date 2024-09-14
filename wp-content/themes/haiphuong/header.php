@@ -52,16 +52,16 @@
                 <a href="/">Trang chủ</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover">
-                <a href="#">Giới thiệu</a>
+                <a href="<?php echo site_url('/intro'); ?>">Giới thiệu</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover">
-                <a href="/service">Dịch vụ</a>
+                <a href="<?php echo site_url('/service'); ?>">Dịch vụ</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover">
                 <a href="#">Tiện ích</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover">
-                <a href="#">Liên hệ</a>
+                <a href="<?php echo site_url('/contact'); ?>">Liên hệ</a>
               </li>
             </ul>
 
