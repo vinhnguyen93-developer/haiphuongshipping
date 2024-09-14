@@ -1,4 +1,14 @@
-<?php get_header(); ?>
+<?php 
+
+get_header();
+
+$service_query = new WP_Query(array(
+  'post_type' => 'service',
+  'posts_per_page' => 5,
+  'order'          => 'ASC',
+));
+
+?>
 
 <section>
   <div class="position-relative text-center">
@@ -74,7 +84,7 @@
           Với phương châm "Sharing Experience, Serving Excellence!" - "Chia sẻ hết mình, Phục vụ tận tình!" đội ngũ HPS luôn nỗ lực trau dồi, ý thức sứ mệnh và cam kết hỗ trợ, đáp ứng mọi nhu cầu của khách hàng ngày càng tốt hơn.
         </p>
 
-        <a class="btn mt-5 text-white about-us-btn rounded-0 btn-lg" href="#">Liên hệ ngay</a>
+        <a class="btn mt-5 text-white about-us-btn rounded-0 btn-lg" href="tel:+84 916.114.888">Liên hệ ngay</a>
       </div>
     </div>
   </div>
@@ -88,89 +98,29 @@
   
     <div class="service-body">
       <div class="h-100 d-flex flex-column flex-md-row justify-content-between px-4 pb-5 service-content">
-        <div class="service-item">
-          <h2 class="service-number mb-3">01</h2>
-          <h2 class="service-title lh-base">Vận tải hàng hóa trọn gói bằng đường biển</h2>
-          <p class="mt-4 service-text text-white fw-lighter lh-base">
-            Chúng tôi tự tin có thể cung cấp cho Quý khách hàng một dịch vụ trọn gói và xuyên suốt bao gồm vận chuyển bằng đường biển, xếp dỡ hàng hóa tại các đầu bến và vận chuyển đường bộ từ kho tới kho… với chi phí cạnh tranh nhất và đáp ứng tốt nhất thời gian phù hợp cho lô hàng.
-          </p>
-          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-        </div>
-  
-        <div class="service-item">
-          <h2 class="service-number mb-3">02</h2>
-          <h2 class="service-title lh-base">Thuê tàu và môi giới hàng hải</h2>
-          <p class="mt-4 service-text text-white fw-lighter lh-base">
-            Đội ngũ nhân sự với trên 20 năm kinh nghiệm trong lĩnh vực khai thác và thuê tàu nội địa và quốc tế tại những công ty vận tải biển có uy tín và bề dầy lịch sự của ngành Hàng hải Việt nam sẵn sàng kết nối các nhu cầu của khách hàng trong việc tìm hàng, tìm tàu nhanh chống với những đối tác uy tín và phù hợp nhất.
-          </p>
-          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-        </div>
-  
-        <div class="service-item">
-          <h2 class="service-number mb-3">03</h2>
-          <h2 class="service-title lh-base">Cung ứng thuyền viên</h2>
-          <p class="mt-4 service-text text-white fw-lighter lh-base">
-            Ngoài những dịch vụ liên quan đến vận tải và dịch vụ hàng hải, công ty chúng tôi cũng nhận cung ứng thuyền viên có kinh nghiệm và kiến thức phục vụ trên các phương tiện vận tải thủy, vận tải biển trong nước và ngoài nước, đáp ứng yêu cầu cao nhất của khách hàng.
-          </p>
-          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-        </div>
-  
-        <div class="service-item">
-          <h2 class="service-number mb-3">04</h2>
-          <h2 class="service-title lh-base">Tư vấn hàng hải</h2>
-          <p class="mt-4 service-text text-white fw-lighter lh-base">
-            Bằng những thông tin, kinh nghiệm và kiến thức đúc kết trong nhiều năm của những Chuyên viên, Thuyền máy trưởng trong đội ngũ nhân sự, chúng tôi luôn sẵn sàng tư vấn và hỗ trợ khách hàng về những vấn đề liên quan đến thương vụ, vận chuyển, hành hải vận tải biển trong và ngoài nước .với những đối tác uy tín và phù hợp nhất.
-          </p>
-          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-        </div>
-  
-        <div class="service-item">
-          <h2 class="service-number mb-3">05</h2>
-          <h2 class="service-title lh-base">Đại lý và cung ứng hàng hải</h2>
-          <p class="mt-4 service-text text-white fw-lighter lh-base">
-            Dịch vụ đại lý và cung ứng hàng hải cho các phương tiện thủy ghé các cảng biển cũng là một thế mạnh của chúng tôi với một mạng lưới quan hệ rộng khắp với chính quyền cảng các cảng, các đơn vị cung ứng, dịch vụ, sửa chữa uy tín và kinh nghiệm.
-          </p>
-          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <?php 
+        
+        if($service_query -> have_posts()):
+          while($service_query -> have_posts()): $service_query -> the_post();
+            $service_number = $service_query -> current_post + 1;
+            $service_title = get_the_title();
+            $service_description = get_the_excerpt();
+        ?>
 
-<section class="container py-4">
-  <div class="d-flex justify-content-center mb-5">
-    <h2 class="section-title">Tin tức & tuyển dụng</h2>
-  </div>
+        <div class="service-item">
+          <h2 class="service-number mb-3"><?php echo '0' . $service_number; ?></h2>
+          <h2 class="service-title lh-base"><?php echo $service_title; ?></h2>
+          <p class="mt-4 service-text text-white fw-lighter lh-base">
+            <?php echo $service_description; ?>
+          </p>
+          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
+        </div>
 
-  <div class="row gx-3 gy-4">
-    <div class="col-12 col-md-4">
-      <div>
-        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-1.png" alt="">
-        <h2 class="m-3 new-title fw-bold lh-base">HPS nâng cấp hạng tàu mới</h2>
-        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
-          Xem thêm
-          <i class="fa-solid fa-angle-right"></i>
-        </a>
-      </div>
-    </div>
-    <div class="col-12 col-md-4">
-      <div>
-        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-2.png" alt="">
-        <h2 class="m-3 new-title fw-bold lh-base">Định hướng xây dựng HPS năm 2025</h2>
-        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
-          Xem thêm
-          <i class="fa-solid fa-angle-right"></i>
-        </a>
-      </div>
-    </div>
-    <div class="col-12 col-md-4">
-      <div>
-        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-3.png" alt="">
-        <h2 class="m-3 new-title fw-bold lh-base">Tuyển dụng tháng 9 tại Hải Phòng</h2>
-        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
-          Xem thêm
-          <i class="fa-solid fa-angle-right"></i>
-        </a>
+        <?php 
+          endwhile;
+        endif;
+
+        ?>
       </div>
     </div>
   </div>
@@ -262,6 +212,45 @@
         Xem thêm
         <i class="fa-solid fa-angle-right"></i>
       </a>
+    </div>
+  </div>
+</section>
+
+<section class="container py-4">
+  <div class="d-flex justify-content-center mb-5">
+    <h2 class="section-title">Tin tức & tuyển dụng</h2>
+  </div>
+
+  <div class="row gx-3 gy-4">
+    <div class="col-12 col-md-4">
+      <div>
+        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-1.png" alt="">
+        <h2 class="m-3 new-title fw-bold lh-base">HPS nâng cấp hạng tàu mới</h2>
+        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
+          Xem thêm
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div>
+        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-2.png" alt="">
+        <h2 class="m-3 new-title fw-bold lh-base">Định hướng xây dựng HPS năm 2025</h2>
+        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
+          Xem thêm
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div>
+        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-3.png" alt="">
+        <h2 class="m-3 new-title fw-bold lh-base">Tuyển dụng tháng 9 tại Hải Phòng</h2>
+        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
+          Xem thêm
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+      </div>
     </div>
   </div>
 </section>

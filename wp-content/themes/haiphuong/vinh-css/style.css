@@ -223,6 +223,30 @@
   background-color: #4c5c91;
 }
 
+.news-page-title {
+  right: 40px;
+  color: #2260db;
+  font-weight: 600;
+  font-size: 56px;
+}
+
+.news-page-title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  filter: blur(16px);
+  z-index: -1;
+}
+
 .client-item img {
   height: 86px;
   object-fit: contain;

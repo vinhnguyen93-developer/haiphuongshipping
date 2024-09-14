@@ -58,7 +58,13 @@
                 <a href="/service">Dịch vụ</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover">
-                <a href="#">Tiện ích</a>
+                <a href="/news">Tin tức & Tuyển dụng</a>
+              </li>
+              <li class="mx-3 pb-1 navbar-item-hover">
+                <a href="#">Đội tàu</a>
+              </li>
+              <li class="mx-3 pb-1 navbar-item-hover">
+                <a href="#">Đối tác</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover">
                 <a href="#">Liên hệ</a>
@@ -103,7 +109,7 @@
                 <a class="navbar-item-hover" href="/service">Dịch vụ</a>
               </li>
               <li class="my-3">
-                <a class="navbar-item-hover" href="#">Tin tức & tuyển dụng</a>
+                <a class="navbar-item-hover" href="/news">Tin tức & tuyển dụng</a>
               </li>
               <li class="my-3">
                 <a class="navbar-item-hover" href="#">Đội tàu</a>
