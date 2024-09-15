@@ -1,22 +1,20 @@
 $(document).ready(function () {
 
-  // duy-js-modal
-  const Shows = document.querySelectorAll('.js-show')
-    const modal = document.querySelector('.modal')
-    function showShow() {
-        modal.classList.add('sv-modal-open')
-    }
 
-    for (const Show of Shows) {
-        buyShow.addEventListener('click',showShow)
-    }
-    // function handleClickOutside(e) {
-    //   if (
-    //     e.target.matches('.modal-conten, .modal-conten *')
-    //   )
-    //     return;
-    //   menu && menu.classList.remove('is-expand');
-    // }
+  // service
+  $('.open-modal').click(function () {
+    const currentId = $(this).attr('id');
+    const currentIndex = currentId?.split('-')[2];
+    const itemId = '#service-title-' + currentIndex;
+    
+    const contentId = '#service-content-' + currentIndex;
+
+    const textTitle = $(itemId).text();
+    const textContent = $(contentId).text();
+    
+    $('#service-modal-title').text(textTitle);
+    $('#service-modal-content').text(textContent);
+  });
 
   $('.comments-slide').slick({
     slidesToShow: 1,
