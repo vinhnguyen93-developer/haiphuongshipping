@@ -46,20 +46,32 @@ get_header(); ?>
     </div>
     </div>
 </div>
-<div class="modal justify-content-center align-items-center">
-    <div class="modal-conten d-flex justify-content-center align-items-end">
-    <div class="button-modal ">
+<div id="modal" class="modal justify-content-center align-items-center">
+    <div id="modal-conten" class="modal-conten d-flex flex-column justify-content-center align-items-center">
+        <div class="d-box-1 d-flex flex-column align-items-center"> 
+            <div class="content-1 text-center">
+                Dịch vụ vận tải hàng hóa bằng đường biển
+            </div>
+            <div class="title-1 text-center">
+            Vận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóa
+            </div>
+        </div>
+       
+        <div class="button-modal ">
         <button class="button-modal d-flex justify-content-center align-items-center">
                 Liên hệ ngay
         </button>
-    </div>    
-    
+        </div>    
     </div>
-    
+ 
 </div>
-<!-- <script>
+
+
+
+<script>
     const buyShows = document.querySelectorAll('.js-show')
     const modal = document.querySelector('.modal')
+    const close = document.querySelector('modal')
     function showShow() {
         modal.classList.add('sv-modal-open')
     }
@@ -67,7 +79,24 @@ get_header(); ?>
     for (const buyShow of buyShows) {
         buyShow.addEventListener('click',showShow)
     }
-</script> -->
+    close.addEventListener('click', (e)=>{
+        if(!modal=conten(e.target)){
+            modal.classlist.remove('sv-modal-open')
+        }
+
+    });
+
+    // document.addEventListener('click', handleClickOutside);
+
+    // function handleClickOutside(e) {
+    // if (
+    //     // e.target.matches('.header-toggle') ||
+    //     e.target.matches('.modal-conten, .modal-conten *')
+    // )
+    //     return;
+    //    modal.classList.remove('sv-modal-close');
+    // }
+</script>
 
 
 

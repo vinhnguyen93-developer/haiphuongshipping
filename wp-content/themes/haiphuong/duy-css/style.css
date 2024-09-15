@@ -69,7 +69,7 @@
 }
 /* service */
 .d-service {
-    padding: 0px 10px 0px 10px;
+    /* padding: 0px 10px 0px 10px; */
 }
 .sv-conten {
     height: 40vw;
@@ -158,6 +158,9 @@
 .sv-modal-open{
     display: flex;
 }
+.sv-modal-close {
+    display: none;
+}
 .button-modal {
     background: #CEA33C;
     color: #FFFFFF;
@@ -166,4 +169,22 @@
     cursor: pointer;
     margin-bottom: 30px;
     font-weight: 500;
+}
+.d-box-1 {
+    width: 80%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 15%;
+}
+.content-1 {
+    font-size: 45px;
+    color: #2260BD;
+    font-weight: 700;
+    line-height: 1.25;
+}
+.title-1 {
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
 }
