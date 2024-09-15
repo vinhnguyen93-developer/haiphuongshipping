@@ -1,0 +1,31 @@
+.text-blue {
+    color: #2260BD;
+}
+
+.center-title {
+    bottom: 50%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.top-title{
+    top: 30%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .center-title {
+        top: 50%;
+        font-weight: 500;
+        font-size: 18px !important;
+    }
+    .top-title {
+        bottom: 20%;
+        font-weight: 500;
+        font-size: 18px !important;
+    }
+    .sp-top-10{
+        margin-top: 30px !important;
+    }
+}
