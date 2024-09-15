@@ -1,4 +1,23 @@
 $(document).ready(function () {
+
+  // duy-js-modal
+  const Shows = document.querySelectorAll('.js-show')
+    const modal = document.querySelector('.modal')
+    function showShow() {
+        modal.classList.add('sv-modal-open')
+    }
+
+    for (const Show of Shows) {
+        buyShow.addEventListener('click',showShow)
+    }
+    // function handleClickOutside(e) {
+    //   if (
+    //     e.target.matches('.modal-conten, .modal-conten *')
+    //   )
+    //     return;
+    //   menu && menu.classList.remove('is-expand');
+    // }
+
   $('.comments-slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
