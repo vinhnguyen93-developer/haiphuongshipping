@@ -80,7 +80,7 @@ get_header(); ?>
         buyShow.addEventListener('click',showShow)
     }
     close.addEventListener('click', (e)=>{
-        if(!modal=conten(e.target)){
+        if(!modal-conten.contains(e.target)){
             modal.classlist.remove('sv-modal-open')
         }
 
