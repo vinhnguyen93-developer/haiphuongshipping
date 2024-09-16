@@ -1,20 +1,34 @@
 $(document).ready(function () {
-
-
   // service
   $('.open-modal').click(function () {
     const currentId = $(this).attr('id');
     const currentIndex = currentId?.split('-')[2];
     const itemId = '#service-title-' + currentIndex;
-    
+
     const contentId = '#service-content-' + currentIndex;
 
     const textTitle = $(itemId).text();
     const textContent = $(contentId).text();
-    
+
     $('#service-modal-title').text(textTitle);
     $('#service-modal-content').text(textContent);
   });
+
+  window.onscroll = function () {
+    navbarSticky();
+  };
+
+  var header = document.getElementById('navbar-sticky');
+  var sticky = header.offsetTop;
+
+  function navbarSticky() {
+    if (window.pageYOffset > sticky) {
+      console.log(header);
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  }
 
   $('.comments-slide').slick({
     slidesToShow: 1,
