@@ -1,3 +1,10 @@
+.space-container {
+  height: 100px;
+  background-image: url('../assets/bg-service.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header {
   background-color: #2155aa;
   height: 69px;
@@ -51,6 +58,10 @@
 
 .navbar-item-active {
   border-bottom: 2px solid #d19e37;
+}
+
+.bg-top {
+  object-fit: cover;
 }
 
 .cover-top-title {

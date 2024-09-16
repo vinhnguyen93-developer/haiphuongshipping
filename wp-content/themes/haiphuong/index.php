@@ -13,12 +13,17 @@ $news_query = new WP_Query(array(
   'posts_per_page' => 3,
 ));
 
+$ships_query = new WP_Query(array(
+  'post_type' => 'fleet',
+  'posts_per_page' => 4,
+));
+
 ?>
 
 <section>
   <div class="position-relative text-center">
-    <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/bg-top.png" alt="Board" >
-    <h1 class="position-absolute cover-top-title">sharing experience, serving excellence</h1>
+    <img class="bg-top" class="w-100" src="<?php bloginfo('template_url'); ?>/assets/bg-top.svg" alt="Board" >
+    <!-- <h1 class="position-absolute cover-top-title">sharing experience, serving excellence</h1> -->
   </div>
 </section>
 
@@ -87,7 +92,7 @@ $news_query = new WP_Query(array(
           Với phương châm "Sharing Experience, Serving Excellence!" - "Chia sẻ hết mình, Phục vụ tận tình!" đội ngũ HPS luôn nỗ lực trau dồi, ý thức sứ mệnh và cam kết hỗ trợ, đáp ứng mọi nhu cầu của khách hàng ngày càng tốt hơn.
         </p>
 
-        <a class="btn mt-5 text-white about-us-btn rounded-0 btn-lg" href="tel:+84 916.114.888">Liên hệ ngay</a>
+        <a class="btn mt-5 text-white about-us-btn rounded-0 btn-lg" href="<?php echo site_url('/contact'); ?>">Liên hệ ngay</a>
       </div>
     </div>
   </div>
@@ -122,7 +127,6 @@ $news_query = new WP_Query(array(
         <?php 
           endwhile;
         endif;
-
         ?>
       </div>
     </div>
@@ -136,78 +140,48 @@ $news_query = new WP_Query(array(
     </div>
   
     <div class="row gy-5">
+      <?php 
+        
+        if($ships_query -> have_posts()):
+          while($ships_query -> have_posts()): $ships_query -> the_post();
+            $ship_image_src = get_field('image_ship', get_the_ID());
+            $ship_name = get_field('ship_name', get_the_ID());
+            $ship_type_year = get_field('ship_type_year', get_the_ID());
+            $ship_flag = get_field('flag', get_the_ID());
+            $ship_builder_place = get_field('shipbuilder_place', get_the_ID());
+            $ship_dwt = get_field('dwt', get_the_ID());
+            $ship_tons = get_field('tons_per_centimeter', get_the_ID());
+            $ship_vessel_dimensions = get_field('vessel_dimensions', get_the_ID());
+            $ship_grt_nrt = get_field('grt_nrt', get_the_ID());
+            $ship_cargo_hold = get_field('cargo_hold_capacity', get_the_ID());
+            $ship_number_of_cargo = get_field('number_of_cargo', get_the_ID());
+            $ship_hatch_cover_type = get_field('hatch_cover_type', get_the_ID());
+            $ship_hatch_dimensions = get_field('hatch_dimensions', get_the_ID());
+            $ship_crane_grab = get_field('crane_grab', get_the_ID());
+            $ship_protection_indemnity = get_field('protection_indemnity', get_the_ID());
+      ?>
       <div class="col-12 py-3 ship-item">
         <div class="d-flex flex-column flex-md-row">
           <div class="me-0 me-md-5 mb-3 mb-md-0">
-            <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-1.png" alt="">
+            <img class="ship-image" src="<?php echo $ship_image_src; ?>" alt="">
           </div>
          
           <div>
-            <h1 class="mb-3 text-uppercase fs-2">ocean gold</h1>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">h.cover type: mac(folding)</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
+            <h1 class="mb-3 text-uppercase fs-2"><?php echo $ship_name; ?></h1>
+            <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_type_year . ', ' . $ship_flag . ' ' . $ship_builder_place; ?></p>
+            <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_dwt . ' ' . $ship_tons; ?></p>
+            <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_vessel_dimensions . ' ' . $ship_grt_nrt; ?></p>
+            <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_cargo_hold . ', ' . $ship_number_of_cargo; ?></p>
+            <p class="fw-lighter lh-base text-uppercase ship-item-text">h.cover type: <?php echo $ship_hatch_cover_type; ?></p>
+            <p class="fw-lighter lh-base text-uppercase ship-item-text">hatch size hold <?php echo $ship_hatch_dimensions; ?></p>
+            <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_crane_grab . ' p&i: ' . $ship_protection_indemnity; ?></p>
           </div>
         </div>
       </div>
-      <div class="col-12 py-3 ship-item">
-        <div class="d-flex flex-column flex-md-row">
-          <div class="me-0 me-md-5 mb-3 mb-md-0">
-            <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-2.png" alt="">
-          </div>
-         
-          <div>
-            <h1 class="mb-3 text-uppercase fs-2">m/v sun gold</h1>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">h.cover type: mac(folding)</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 py-3 ship-item">
-        <div class="d-flex flex-column flex-md-row">
-          <div class="me-0 me-md-5 mb-3 mb-md-0">
-            <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-3.png" alt="">
-          </div>
-         
-          <div>
-            <h1 class="mb-3 text-uppercase fs-2">m/v new gold</h1>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">h.cover type: mac(folding)</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 py-3 ship-item">
-        <div class="d-flex flex-column flex-md-row">
-          <div class="me-0 me-md-5 mb-3 mb-md-0">
-            <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-4.png" alt="">
-          </div>
-         
-          <div>
-            <h1 class="mb-3 text-uppercase fs-2">m/v t&t gold</h1>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">sdbc, 1996blt, panama flag japan tsuneishi blt</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">45,622dwt on s.draft: 11.62m tcp: 49.82</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">loa/beam/depth 185.74/30.4/16.5m grt/nrt 26,047/14,880</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">grain/57,208.40m3, bale/55,564.90m3, 5h/5h</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">h.cover type: mac(folding)</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">hatch size hold no.1 20.5 <span class="text-lowercase">x</span> 15.3/no.2, 3, 4, 5 20.8 <span class="text-lowercase">x</span> 15.3m</p>
-            <p class="fw-lighter lh-base text-uppercase ship-item-text">crane 4 <span class="text-lowercase">x</span> 20 mt, grabfitted 4 <span class="text-lowercase">x</span> 8 cbm p&i: mmia ada</p>
-          </div>
-        </div>
-      </div>
+      <?php 
+        endwhile;
+      endif;
+      ?>
     </div>
 
     <div class="mt-4 text-center">
@@ -217,6 +191,10 @@ $news_query = new WP_Query(array(
       </a>
     </div>
   </div>
+</section>
+
+<section class="space-container">
+  <!-- <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/bg-space.png" alt=""> -->
 </section>
 
 <section class="container py-4">
@@ -232,13 +210,9 @@ $news_query = new WP_Query(array(
         $news_image_src = get_field('image', get_the_ID());
     ?>
     <div class="col-12 col-md-4">
-      <div class="new-item pb-2">
+      <div class="new-item pb-1">
         <img class="new-image" src="<?php echo $news_image_src; ?>" alt="">
         <h2 class="m-3 new-title fw-bold lh-base"><?php echo $news_title; ?></h2>
-        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
-          Xem thêm
-          <i class="fa-solid fa-angle-right"></i>
-        </a>
       </div>
     </div>
     <?php 
@@ -263,28 +237,28 @@ $news_query = new WP_Query(array(
           <div class="comments-slide">
             <div class="comments-content">
               <i class="comments-quote fa-solid fa-quote-left"></i>
-              <h2 class="lh-lg comments-text">
+              <h2 class="lh-lg comments-text text-white">
                 Chúng tôi hoàn toàn tin tưởng dịch vụ HPS cung cấp, là đối tác tin cậy của công ty trong dịch vụ vận chuyển!
                 <i class="comments-angles fa-solid fa-angles-right"></i>
               </h2>
             </div>
             <div class="comments-content">
               <i class="comments-quote fa-solid fa-quote-left"></i>
-              <h2 class="lh-lg comments-text">
+              <h2 class="lh-lg comments-text text-white">
                 HPS mang đến dịch vụ logistic chuyên nghiệp và đáng tin cậy. Từ quy trình vận hành đến chăm sóc khách hàng, mọi thứ đều hoàn hảo, giúp chúng tôi tối ưu hóa thời gian và chi phí
                 <i class="comments-angles fa-solid fa-angles-right"></i>
               </h2>
             </div>
             <div class="comments-content">
               <i class="comments-quote fa-solid fa-quote-left"></i>
-              <h2 class="lh-lg comments-text">
+              <h2 class="lh-lg comments-text text-white">
                 Sự chuyên nghiệp của HPS đã giúp chúng tôi yên tâm trong mọi khâu vận chuyển quốc tế. Đội ngũ tận tâm và hệ thống quản lý hàng hóa hiện đại là những điểm cộng lớn
                 <i class="comments-angles fa-solid fa-angles-right"></i>
               </h2>
             </div>
             <div class="comments-content">
               <i class="comments-quote fa-solid fa-quote-left"></i>
-              <h2 class="lh-lg comments-text">
+              <h2 class="lh-lg comments-text text-white">
                 HPS không chỉ mang lại hiệu quả vận chuyển cao mà còn tạo dựng lòng tin với dịch vụ chăm sóc khách hàng chu đáo, luôn sẵn sàng xử lý mọi vấn đề phát sinh.
                 <i class="comments-angles fa-solid fa-angles-right"></i>
               </h2>
