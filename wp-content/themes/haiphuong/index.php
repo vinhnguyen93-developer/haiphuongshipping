@@ -17,8 +17,8 @@ $news_query = new WP_Query(array(
 
 <section>
   <div class="position-relative text-center">
-    <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/board.png" alt="Board" >
-    <h1 class="position-absolute text-white cover-top-title">sharing experience, serving excellence</h1>
+    <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/bg-top.png" alt="Board" >
+    <h1 class="position-absolute cover-top-title">sharing experience, serving excellence</h1>
   </div>
 </section>
 
@@ -211,7 +211,7 @@ $news_query = new WP_Query(array(
     </div>
 
     <div class="mt-4 text-center">
-      <a href="/ships" class="new-btn fs-4">
+      <a href="<?php echo site_url('/ships'); ?>" class="new-btn fs-4">
         Xem thêm
         <i class="fa-solid fa-angle-right"></i>
       </a>
@@ -232,7 +232,7 @@ $news_query = new WP_Query(array(
         $news_image_src = get_field('image', get_the_ID());
     ?>
     <div class="col-12 col-md-4">
-      <div>
+      <div class="new-item pb-2">
         <img class="new-image" src="<?php echo $news_image_src; ?>" alt="">
         <h2 class="m-3 new-title fw-bold lh-base"><?php echo $news_title; ?></h2>
         <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
@@ -245,6 +245,13 @@ $news_query = new WP_Query(array(
       endwhile;
     endif;
     ?>
+
+    <div class="mt-4 text-center">
+      <a href="<?php echo site_url('/news'); ?>" class="new-btn fs-4">
+        Xem thêm
+        <i class="fa-solid fa-angle-right"></i>
+      </a>
+    </div>
   </div>
 </section>
 

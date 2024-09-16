@@ -51,7 +51,7 @@
         }
       ?>
 
-      <nav class="navbar-container">
+      <nav id="navbar-sticky" class="navbar-container bg-white">
         <div class="container d-flex align-items-center justify-content-between">
           <a href="/">
             <img class="navbar-logo" src="<?php bloginfo('template_url'); ?>/assets/haiphuong_logo.jpg" alt="Hai Phuong Logo">
@@ -148,5 +148,5 @@
         </div>
       </nav>
 
-      <div>
+      <div class="hp-main">
         <main role="main">

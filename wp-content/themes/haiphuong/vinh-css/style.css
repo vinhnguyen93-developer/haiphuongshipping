@@ -14,12 +14,25 @@
   justify-content: center;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.sticky + .hp-main {
+  padding-top: 122px;
+}
+
 .navbar-container {
   height: 122px;
 }
 
 .navbar-logo {
-  width: 200px;
+  width: 190px;
 }
 
 .navbar-item-hover {
@@ -41,11 +54,16 @@
 }
 
 .cover-top-title {
-  bottom: 45px;
-  right: 35px;
+  top: 25%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
+  font-size: 42px;
+  color: #105ab9;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
 }
 
 .why {
@@ -192,6 +210,46 @@
   transform: rotate(90deg);
 }
 
+.new-item {
+  position: relative;
+  background-color: white;
+  cursor: default;
+  z-index: 1;
+  transition: transform 0.25s linear, box-shadow 0.25s linear;
+}
+
+.new-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+}
+
+.new-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2467c7;
+  z-index: -1;
+  transition: transform 0.25s linear;
+}
+
+.new-item:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.new-item:hover::before {
+  transform: translate(10px, 10px);
+}
+
 .new-image {
   width: 100%;
   height: 16vw;
@@ -307,6 +365,10 @@
 }
 
 @media (max-width: 768px) {
+  .sticky + .hp-main {
+    padding-top: 69px;
+  }
+
   .navbar-container {
     height: 69px;
   }
@@ -316,11 +378,8 @@
   }
 
   .cover-top-title {
-    top: 20px;
-    font-size: 15px;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    top: 30px;
+    font-size: 16px;
     letter-spacing: 1px;
   }
 
