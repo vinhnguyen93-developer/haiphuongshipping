@@ -21,7 +21,7 @@ get_header(); ?>
         <p class="title">
             SDBC, 1996BLT, PANAMA FLAG JAPAN TSUNEISHI BLT 45,622DWT ON S.DRAFT: 11.62M TPC:49.82 LOA/BEAM/DEPTH 185.74/ 30.4/ 16.5 GRT/ NRT 26,047/ 14,880 GRAIN/ 57,208.40 M3, BALE/ 55,564.90M3, 5H/5H
         </p>
-        <a href="" class="more">Xem thêm ></a>
+        <a href="<?php echo site_url('/contact'); ?>" class="more">Xem thêm ></a>
         </div>
         </div>
          
@@ -34,7 +34,7 @@ get_header(); ?>
         <p class="title">
             SDBC, 1996BLT, PANAMA FLAG JAPAN TSUNEISHI BLT 45,622DWT ON S.DRAFT: 11.62M TPC:49.82 LOA/BEAM/DEPTH 185.74/ 30.4/ 16.5 GRT/ NRT 26,047/ 14,880 GRAIN/ 57,208.40 M3, BALE/ 55,564.90M3, 5H/5H
         </p>
-        <a href="" class="more">Xem thêm ></a>
+        <a href="<?php echo site_url('/contact'); ?>" class="more">Xem thêm ></a>
         </div>
         </div>
          
@@ -47,7 +47,7 @@ get_header(); ?>
         <p class="title">
             SDBC, 1996BLT, PANAMA FLAG JAPAN TSUNEISHI BLT 45,622DWT ON S.DRAFT: 11.62M TPC:49.82 LOA/BEAM/DEPTH 185.74/ 30.4/ 16.5 GRT/ NRT 26,047/ 14,880 GRAIN/ 57,208.40 M3, BALE/ 55,564.90M3, 5H/5H
         </p>
-        <a href="" class="more">Xem thêm ></a>
+        <a href="<?php echo site_url('/contact'); ?>" class="more">Xem thêm ></a>
         </div>
         </div>
          
@@ -60,7 +60,7 @@ get_header(); ?>
         <p class="title">
             SDBC, 1996BLT, PANAMA FLAG JAPAN TSUNEISHI BLT 45,622DWT ON S.DRAFT: 11.62M TPC:49.82 LOA/BEAM/DEPTH 185.74/ 30.4/ 16.5 GRT/ NRT 26,047/ 14,880 GRAIN/ 57,208.40 M3, BALE/ 55,564.90M3, 5H/5H
         </p>
-        <a href="" class="more">Xem thêm ></a>
+        <a href="<?php echo site_url('/contact'); ?>" class="more">Xem thêm ></a>
         </div>
         </div>
         
