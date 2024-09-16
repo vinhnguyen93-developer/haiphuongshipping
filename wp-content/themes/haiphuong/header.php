@@ -72,7 +72,7 @@
                 <a href="<?php echo site_url('/news'); ?>">Tin tức & Tuyển dụng</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover">
-                <a href="#">Đội tàu</a>
+                <a href="<?php echo site_url('/fleet'); ?>">Đội tàu</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover <?php echo ($path_name == 'contact' ? 'navbar-item-active' : ''); ?>">
                 <a href="<?php echo site_url('/contact'); ?>">Liên hệ</a>
