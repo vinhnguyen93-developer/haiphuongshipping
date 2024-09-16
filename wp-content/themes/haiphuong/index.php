@@ -22,7 +22,7 @@ $news_query = new WP_Query(array(
   </div>
 </section>
 
-<section class="py-3 why">
+<section class="py-4 why">
   <div class="d-flex justify-content-center mb-5">
     <h2 class="section-title">Tại sao chọn chúng tôi?</h2>
   </div>
@@ -30,41 +30,39 @@ $news_query = new WP_Query(array(
   <div class="container">
     <div class="row gx-0 gx-md-5 gy-md-0 gy-4">
       <div class="col-12 col-md-4">
-        <div class="why-item p-2 d-flex align-items-center">
+        <div class="why-item px-2 px-md-3 py-4 d-flex align-items-center">
           <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/goal.png" alt="Goal" >
           <div>
             <h3 class="why-item-title fw-medium">Giải pháp vận chuyển</h3>
-            <p class="why-item-text fw-light mt-2 mb-4">Lorem ipsum dolor amet, consectetuer</p>
-            <a class="why-item-title" href="#">
+            <p class="why-item-text fw-light mt-2 lh-base">
+              Chúng tôi cung cấp các phương thức giao hàng thuận tiện và tiết kiệm cho từng dự án.
+            </p>
+            <!-- <a class="why-item-title" href="#">
               <span>Xem thêm</span>
               <i class="fa-solid fa-chevron-right"></i>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
       <div class="col-12 col-md-4">
-        <div class="why-item p-2 d-flex align-items-center">
+        <div class="why-item px-2 px-md-3 py-4 d-flex align-items-center">
           <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/analytic.png" alt="Analytic" >
           <div>
             <h3 class="why-item-title fw-medium">Chất lượng đảm bảo</h3>
-            <p class="why-item-text fw-light mt-2 mb-4">Lorem ipsum dolor amet, consectetuer</p>
-            <a class="why-item-title" href="#">
-              <span>Xem thêm</span>
-              <i class="fa-solid fa-chevron-right"></i>
-            </a>
+            <p class="why-item-text fw-light mt-2 lh-base">
+              Với mục đích cung cấp dịch vụ vận chuyển hàng hóa chất lượng cao.
+            </p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-4">
-        <div class="why-item p-2 d-flex align-items-center">
+        <div class="why-item px-2 px-md-3 py-4 d-flex align-items-center">
           <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/focus.png" alt="Focus" >
           <div>
             <h3 class="why-item-title fw-medium">Điều kiện thanh toán</h3>
-            <p class="why-item-text fw-light mt-2 mb-4">Lorem ipsum dolor amet, consectetuer</p>
-            <a class="why-item-title" href="#">
-              <span>Xem thêm</span>
-              <i class="fa-solid fa-chevron-right"></i>
-            </a>
+            <p class="why-item-text fw-light mt-2 lh-base">
+              Chúng tôi cung cấp cho mỗi khách hàng thanh toán cước vận chuyển thuận lợi.
+            </p>
           </div>
         </div>
       </div>
@@ -138,7 +136,7 @@ $news_query = new WP_Query(array(
     </div>
   
     <div class="row gy-5">
-      <div class="col-12">
+      <div class="col-12 py-3 ship-item">
         <div class="d-flex flex-column flex-md-row">
           <div class="me-0 me-md-5 mb-3 mb-md-0">
             <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-1.png" alt="">
@@ -156,7 +154,7 @@ $news_query = new WP_Query(array(
           </div>
         </div>
       </div>
-      <div class="col-12">
+      <div class="col-12 py-3 ship-item">
         <div class="d-flex flex-column flex-md-row">
           <div class="me-0 me-md-5 mb-3 mb-md-0">
             <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-2.png" alt="">
@@ -174,7 +172,7 @@ $news_query = new WP_Query(array(
           </div>
         </div>
       </div>
-      <div class="col-12">
+      <div class="col-12 py-3 ship-item">
         <div class="d-flex flex-column flex-md-row">
           <div class="me-0 me-md-5 mb-3 mb-md-0">
             <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-3.png" alt="">
@@ -192,7 +190,7 @@ $news_query = new WP_Query(array(
           </div>
         </div>
       </div>
-      <div class="col-12">
+      <div class="col-12 py-3 ship-item">
         <div class="d-flex flex-column flex-md-row">
           <div class="me-0 me-md-5 mb-3 mb-md-0">
             <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-4.png" alt="">

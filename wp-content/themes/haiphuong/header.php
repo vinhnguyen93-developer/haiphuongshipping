@@ -74,9 +74,6 @@
               <li class="mx-3 pb-1 navbar-item-hover">
                 <a href="#">Đội tàu</a>
               </li>
-              <li class="mx-3 pb-1 navbar-item-hover">
-                <a href="#">Đối tác</a>
-              </li>
               <li class="mx-3 pb-1 navbar-item-hover <?php echo ($path_name == 'contact' ? 'navbar-item-active' : ''); ?>">
                 <a href="<?php echo site_url('/contact'); ?>">Liên hệ</a>
               </li>
@@ -126,9 +123,6 @@
               </li>
               <li class="my-3">
                 <a class="navbar-item-hover" href="#">Đội tàu</a>
-              </li>
-              <li class="my-3">
-                <a class="navbar-item-hover" href="#">Đối tác</a>
               </li>
               <li class="my-3">
                 <a class="navbar-item-hover <?php echo ($path_name == 'contact' ? 'navbar-item-active' : ''); ?>" href="<?php echo site_url('/contact'); ?>">Liên hệ</a>

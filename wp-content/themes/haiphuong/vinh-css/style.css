@@ -53,8 +53,44 @@
 }
 
 .why-item {
+  position: relative;
   background-color: #f6f5f4;
-  height: 160px;
+  height: 100%;
+  cursor: default;
+  z-index: 1;
+  transition: transform 0.25s linear, box-shadow 0.25s linear;
+}
+
+.why-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f5f4;
+  z-index: -1;
+}
+
+.why-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2467c7;
+  z-index: -1;
+  transition: transform 0.25s linear;
+}
+
+.why-item:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.why-item:hover::before {
+  transform: translate(10px, 10px);
 }
 
 .why-item-title {
@@ -168,6 +204,14 @@
 
 .new-btn {
   color: #405e87;
+}
+
+.ship-item {
+  transition: box-shadow 0.25s linear;
+}
+
+.ship-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .ship-image {
