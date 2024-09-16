@@ -28,10 +28,11 @@ $service_query = new WP_Query(array(
             $service_number = $service_query -> current_post + 1;
             $service_title = get_the_title();
             $service_description = get_the_excerpt();
+            $service_image_src = get_field('image', get_the_ID());
         ?>
 
     <div id="d-service-<?php echo $service_number; ?>" class="sv-1  open-modal d-flex flex-column">
-        <img  class="sv-img"src="<?php bloginfo('template_url'); ?>/assets/vantai.png" alt=""/>
+        <img  class="sv-img"src="<?php echo $service_image_src; ?>" alt=""/>
         <button id="service-title-<?php echo $service_number; ?>" class="show sv-button js-show">
             <?php echo $service_title; ?>
         </button>
