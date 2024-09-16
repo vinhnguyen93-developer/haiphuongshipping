@@ -40,7 +40,18 @@
         </div>
       </header>
 
-      <nav class="navbar-container">
+      <?php
+        $path = $_SERVER['REQUEST_URI'];
+        $path_name;
+        if(strlen($path) > 1) {
+          $array_path = explode('/', $path);
+          $path_name = $array_path[1];
+        } else {
+          $path_name = $path;
+        }
+      ?>
+
+      <nav id="navbar-sticky" class="navbar-container bg-white">
         <div class="container d-flex align-items-center justify-content-between">
           <a href="/">
             <img class="navbar-logo" src="<?php bloginfo('template_url'); ?>/assets/haiphuong_logo.jpg" alt="Hai Phuong Logo">
@@ -48,19 +59,22 @@
 
           <div class="d-none d-md-flex align-items-center">
             <ul class="d-flex align-items-center">
-              <li class="mx-3 pb-1 navbar-item-hover navbar-item-active">
+              <li class="mx-3 pb-1 navbar-item-hover <?php echo ($path_name == '/' ? 'navbar-item-active' : ''); ?>">
                 <a href="/">Trang chủ</a>
               </li>
-              <li class="mx-3 pb-1 navbar-item-hover">
+              <li class="mx-3 pb-1 navbar-item-hover <?php echo ($path_name == 'intro' ? 'navbar-item-active' : ''); ?>">
                 <a href="<?php echo site_url('/intro'); ?>">Giới thiệu</a>
               </li>
-              <li class="mx-3 pb-1 navbar-item-hover">
+              <li class="mx-3 pb-1 navbar-item-hover <?php echo ($path_name == 'service' ? 'navbar-item-active' : ''); ?>">
                 <a href="<?php echo site_url('/service'); ?>">Dịch vụ</a>
               </li>
-              <li class="mx-3 pb-1 navbar-item-hover">
-                <a href="#">Tiện ích</a>
+              <li class="mx-3 pb-1 navbar-item-hover <?php echo ($path_name == 'news' ? 'navbar-item-active' : ''); ?>">
+                <a href="<?php echo site_url('/news'); ?>">Tin tức & Tuyển dụng</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover">
+                <a href="#">Đội tàu</a>
+              </li>
+              <li class="mx-3 pb-1 navbar-item-hover <?php echo ($path_name == 'contact' ? 'navbar-item-active' : ''); ?>">
                 <a href="<?php echo site_url('/contact'); ?>">Liên hệ</a>
               </li>
             </ul>
@@ -88,31 +102,30 @@
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header align-items-start">
-            <img width="140" src="<?php bloginfo('template_url'); ?>/assets/haiphuong_logo.jpg" alt="">
+            <a href="/">
+              <img width="140" src="<?php bloginfo('template_url'); ?>/assets/haiphuong_logo.jpg" alt="">
+            </a>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="my-3">
-                <a class="navbar-item-hover navbar-item-active" href="/">Trang chủ</a>
+                <a class="navbar-item-hover <?php echo ($path_name == '/' ? 'navbar-item-active' : ''); ?>" href="/">Trang chủ</a>
               </li>
               <li class="my-3">
-                <a class="navbar-item-hover" href="#">Giới thiệu</a>
+                <a class="navbar-item-hover <?php echo ($path_name == 'intro' ? 'navbar-item-active' : ''); ?>" href="<?php echo site_url('/intro'); ?>">Giới thiệu</a>
               </li>
               <li class="my-3">
-                <a class="navbar-item-hover" href="/service">Dịch vụ</a>
+                <a class="navbar-item-hover <?php echo ($path_name == 'service' ? 'navbar-item-active' : ''); ?>" href="<?php echo site_url('/service'); ?>">Dịch vụ</a>
               </li>
               <li class="my-3">
-                <a class="navbar-item-hover" href="#">Tin tức & tuyển dụng</a>
+                <a class="navbar-item-hover <?php echo ($path_name == 'news' ? 'navbar-item-active' : ''); ?>" href="<?php echo site_url('/news'); ?>">Tin tức & tuyển dụng</a>
               </li>
               <li class="my-3">
                 <a class="navbar-item-hover" href="#">Đội tàu</a>
               </li>
               <li class="my-3">
-                <a class="navbar-item-hover" href="#">Đối tác</a>
-              </li>
-              <li class="my-3">
-                <a class="navbar-item-hover" href="#">Liên hệ</a>
+                <a class="navbar-item-hover <?php echo ($path_name == 'contact' ? 'navbar-item-active' : ''); ?>" href="<?php echo site_url('/contact'); ?>">Liên hệ</a>
               </li>
             </ul>
 
@@ -135,5 +148,5 @@
         </div>
       </nav>
 
-      <div>
+      <div class="hp-main">
         <main role="main">

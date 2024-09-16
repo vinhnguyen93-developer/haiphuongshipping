@@ -1,13 +1,28 @@
-<?php get_header(); ?>
+<?php 
+
+get_header();
+
+$service_query = new WP_Query(array(
+  'post_type' => 'service',
+  'posts_per_page' => 5,
+  'order'          => 'ASC',
+));
+
+$news_query = new WP_Query(array(
+  'post_type' => 'news',
+  'posts_per_page' => 3,
+));
+
+?>
 
 <section>
   <div class="position-relative text-center">
-    <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/board.png" alt="Board" >
-    <h1 class="position-absolute text-white cover-top-title">sharing experience, serving excellence</h1>
+    <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/bg-top.png" alt="Board" >
+    <h1 class="position-absolute cover-top-title">sharing experience, serving excellence</h1>
   </div>
 </section>
 
-<section class="py-3 why">
+<section class="py-4 why">
   <div class="d-flex justify-content-center mb-5">
     <h2 class="section-title">Tại sao chọn chúng tôi?</h2>
   </div>
@@ -15,41 +30,39 @@
   <div class="container">
     <div class="row gx-0 gx-md-5 gy-md-0 gy-4">
       <div class="col-12 col-md-4">
-        <div class="why-item p-2 d-flex align-items-center">
+        <div class="why-item px-2 px-md-3 py-4 d-flex align-items-center">
           <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/goal.png" alt="Goal" >
           <div>
             <h3 class="why-item-title fw-medium">Giải pháp vận chuyển</h3>
-            <p class="why-item-text fw-light mt-2 mb-4">Lorem ipsum dolor amet, consectetuer</p>
-            <a class="why-item-title" href="#">
+            <p class="why-item-text fw-light mt-2 lh-base">
+              Chúng tôi cung cấp các phương thức giao hàng thuận tiện và tiết kiệm cho từng dự án.
+            </p>
+            <!-- <a class="why-item-title" href="#">
               <span>Xem thêm</span>
               <i class="fa-solid fa-chevron-right"></i>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
       <div class="col-12 col-md-4">
-        <div class="why-item p-2 d-flex align-items-center">
+        <div class="why-item px-2 px-md-3 py-4 d-flex align-items-center">
           <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/analytic.png" alt="Analytic" >
           <div>
             <h3 class="why-item-title fw-medium">Chất lượng đảm bảo</h3>
-            <p class="why-item-text fw-light mt-2 mb-4">Lorem ipsum dolor amet, consectetuer</p>
-            <a class="why-item-title" href="#">
-              <span>Xem thêm</span>
-              <i class="fa-solid fa-chevron-right"></i>
-            </a>
+            <p class="why-item-text fw-light mt-2 lh-base">
+              Với mục đích cung cấp dịch vụ vận chuyển hàng hóa chất lượng cao.
+            </p>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-4">
-        <div class="why-item p-2 d-flex align-items-center">
+        <div class="why-item px-2 px-md-3 py-4 d-flex align-items-center">
           <img class="me-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/focus.png" alt="Focus" >
           <div>
             <h3 class="why-item-title fw-medium">Điều kiện thanh toán</h3>
-            <p class="why-item-text fw-light mt-2 mb-4">Lorem ipsum dolor amet, consectetuer</p>
-            <a class="why-item-title" href="#">
-              <span>Xem thêm</span>
-              <i class="fa-solid fa-chevron-right"></i>
-            </a>
+            <p class="why-item-text fw-light mt-2 lh-base">
+              Chúng tôi cung cấp cho mỗi khách hàng thanh toán cước vận chuyển thuận lợi.
+            </p>
           </div>
         </div>
       </div>
@@ -74,7 +87,7 @@
           Với phương châm "Sharing Experience, Serving Excellence!" - "Chia sẻ hết mình, Phục vụ tận tình!" đội ngũ HPS luôn nỗ lực trau dồi, ý thức sứ mệnh và cam kết hỗ trợ, đáp ứng mọi nhu cầu của khách hàng ngày càng tốt hơn.
         </p>
 
-        <a class="btn mt-5 text-white about-us-btn rounded-0 btn-lg" href="#">Liên hệ ngay</a>
+        <a class="btn mt-5 text-white about-us-btn rounded-0 btn-lg" href="tel:+84 916.114.888">Liên hệ ngay</a>
       </div>
     </div>
   </div>
@@ -88,89 +101,29 @@
   
     <div class="service-body">
       <div class="h-100 d-flex flex-column flex-md-row justify-content-between px-4 pb-5 service-content">
-        <div class="service-item">
-          <h2 class="service-number mb-3">01</h2>
-          <h2 class="service-title lh-base">Vận tải hàng hóa trọn gói bằng đường biển</h2>
-          <p class="mt-4 service-text text-white fw-lighter lh-base">
-            Chúng tôi tự tin có thể cung cấp cho Quý khách hàng một dịch vụ trọn gói và xuyên suốt bao gồm vận chuyển bằng đường biển, xếp dỡ hàng hóa tại các đầu bến và vận chuyển đường bộ từ kho tới kho… với chi phí cạnh tranh nhất và đáp ứng tốt nhất thời gian phù hợp cho lô hàng.
-          </p>
-          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-        </div>
-  
-        <div class="service-item">
-          <h2 class="service-number mb-3">02</h2>
-          <h2 class="service-title lh-base">Thuê tàu và môi giới hàng hải</h2>
-          <p class="mt-4 service-text text-white fw-lighter lh-base">
-            Đội ngũ nhân sự với trên 20 năm kinh nghiệm trong lĩnh vực khai thác và thuê tàu nội địa và quốc tế tại những công ty vận tải biển có uy tín và bề dầy lịch sự của ngành Hàng hải Việt nam sẵn sàng kết nối các nhu cầu của khách hàng trong việc tìm hàng, tìm tàu nhanh chống với những đối tác uy tín và phù hợp nhất.
-          </p>
-          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-        </div>
-  
-        <div class="service-item">
-          <h2 class="service-number mb-3">03</h2>
-          <h2 class="service-title lh-base">Cung ứng thuyền viên</h2>
-          <p class="mt-4 service-text text-white fw-lighter lh-base">
-            Ngoài những dịch vụ liên quan đến vận tải và dịch vụ hàng hải, công ty chúng tôi cũng nhận cung ứng thuyền viên có kinh nghiệm và kiến thức phục vụ trên các phương tiện vận tải thủy, vận tải biển trong nước và ngoài nước, đáp ứng yêu cầu cao nhất của khách hàng.
-          </p>
-          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-        </div>
-  
-        <div class="service-item">
-          <h2 class="service-number mb-3">04</h2>
-          <h2 class="service-title lh-base">Tư vấn hàng hải</h2>
-          <p class="mt-4 service-text text-white fw-lighter lh-base">
-            Bằng những thông tin, kinh nghiệm và kiến thức đúc kết trong nhiều năm của những Chuyên viên, Thuyền máy trưởng trong đội ngũ nhân sự, chúng tôi luôn sẵn sàng tư vấn và hỗ trợ khách hàng về những vấn đề liên quan đến thương vụ, vận chuyển, hành hải vận tải biển trong và ngoài nước .với những đối tác uy tín và phù hợp nhất.
-          </p>
-          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-        </div>
-  
-        <div class="service-item">
-          <h2 class="service-number mb-3">05</h2>
-          <h2 class="service-title lh-base">Đại lý và cung ứng hàng hải</h2>
-          <p class="mt-4 service-text text-white fw-lighter lh-base">
-            Dịch vụ đại lý và cung ứng hàng hải cho các phương tiện thủy ghé các cảng biển cũng là một thế mạnh của chúng tôi với một mạng lưới quan hệ rộng khắp với chính quyền cảng các cảng, các đơn vị cung ứng, dịch vụ, sửa chữa uy tín và kinh nghiệm.
-          </p>
-          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <?php 
+        
+        if($service_query -> have_posts()):
+          while($service_query -> have_posts()): $service_query -> the_post();
+            $service_number = $service_query -> current_post + 1;
+            $service_title = get_the_title();
+            $service_description = get_the_excerpt();
+        ?>
 
-<section class="container py-4">
-  <div class="d-flex justify-content-center mb-5">
-    <h2 class="section-title">Tin tức & tuyển dụng</h2>
-  </div>
+        <div class="service-item">
+          <h2 class="service-number mb-3"><?php echo '0' . $service_number; ?></h2>
+          <h2 class="service-title lh-base"><?php echo $service_title; ?></h2>
+          <p class="mt-4 service-text text-white fw-lighter lh-base">
+            <?php echo $service_description; ?>
+          </p>
+          <i class="service-angles mt-4 text-white fa-solid fa-angles-right"></i>
+        </div>
 
-  <div class="row gx-3 gy-4">
-    <div class="col-12 col-md-4">
-      <div>
-        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-1.png" alt="">
-        <h2 class="m-3 new-title fw-bold lh-base">HPS nâng cấp hạng tàu mới</h2>
-        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
-          Xem thêm
-          <i class="fa-solid fa-angle-right"></i>
-        </a>
-      </div>
-    </div>
-    <div class="col-12 col-md-4">
-      <div>
-        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-2.png" alt="">
-        <h2 class="m-3 new-title fw-bold lh-base">Định hướng xây dựng HPS năm 2025</h2>
-        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
-          Xem thêm
-          <i class="fa-solid fa-angle-right"></i>
-        </a>
-      </div>
-    </div>
-    <div class="col-12 col-md-4">
-      <div>
-        <img class="new-image" src="<?php bloginfo('template_url'); ?>/assets/new-3.png" alt="">
-        <h2 class="m-3 new-title fw-bold lh-base">Tuyển dụng tháng 9 tại Hải Phòng</h2>
-        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
-          Xem thêm
-          <i class="fa-solid fa-angle-right"></i>
-        </a>
+        <?php 
+          endwhile;
+        endif;
+
+        ?>
       </div>
     </div>
   </div>
@@ -183,7 +136,7 @@
     </div>
   
     <div class="row gy-5">
-      <div class="col-12">
+      <div class="col-12 py-3 ship-item">
         <div class="d-flex flex-column flex-md-row">
           <div class="me-0 me-md-5 mb-3 mb-md-0">
             <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-1.png" alt="">
@@ -201,7 +154,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12">
+      <div class="col-12 py-3 ship-item">
         <div class="d-flex flex-column flex-md-row">
           <div class="me-0 me-md-5 mb-3 mb-md-0">
             <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-2.png" alt="">
@@ -219,7 +172,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12">
+      <div class="col-12 py-3 ship-item">
         <div class="d-flex flex-column flex-md-row">
           <div class="me-0 me-md-5 mb-3 mb-md-0">
             <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-3.png" alt="">
@@ -237,7 +190,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12">
+      <div class="col-12 py-3 ship-item">
         <div class="d-flex flex-column flex-md-row">
           <div class="me-0 me-md-5 mb-3 mb-md-0">
             <img class="ship-image" src="<?php bloginfo('template_url'); ?>/assets/ship-4.png" alt="">
@@ -258,7 +211,43 @@
     </div>
 
     <div class="mt-4 text-center">
-      <a href="/ships" class="new-btn fs-4">
+      <a href="<?php echo site_url('/ships'); ?>" class="new-btn fs-4">
+        Xem thêm
+        <i class="fa-solid fa-angle-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="container py-4">
+  <div class="d-flex justify-content-center mb-5">
+    <h2 class="section-title">Tin tức & tuyển dụng</h2>
+  </div>
+
+  <div class="row gx-3 gy-4">
+    <?php 
+    if($news_query -> have_posts()):
+      while($news_query -> have_posts()): $news_query -> the_post();
+        $news_title = get_the_title();
+        $news_image_src = get_field('image', get_the_ID());
+    ?>
+    <div class="col-12 col-md-4">
+      <div class="new-item pb-2">
+        <img class="new-image" src="<?php echo $news_image_src; ?>" alt="">
+        <h2 class="m-3 new-title fw-bold lh-base"><?php echo $news_title; ?></h2>
+        <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
+          Xem thêm
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+    <?php 
+      endwhile;
+    endif;
+    ?>
+
+    <div class="mt-4 text-center">
+      <a href="<?php echo site_url('/news'); ?>" class="new-btn fs-4">
         Xem thêm
         <i class="fa-solid fa-angle-right"></i>
       </a>

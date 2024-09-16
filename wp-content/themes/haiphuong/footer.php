@@ -10,29 +10,29 @@
     </div>  
     <div class="information d-flex flex-column mb-3 align-item-center">
       <div>
-        <H1 class="text-white h-100">CÔNG TY TNHH VẬN TẢI BIỂN HẢI PHƯƠNG</H1>
+        <H1 class="footer-h1 text-white h-100">CÔNG TY TNHH VẬN TẢI BIỂN HẢI PHƯƠNG</H1>
       </div>
       <div class="d-flex d-flex flex-column mb-3">
         <div class="title-size d-flex align-items-center">
           <div class="d-flex size d-flex align-items-center">
           <img  class="img-size"src="<?php bloginfo('template_url'); ?>/assets/gps.png" alt=""/>
-          <P class="text-white">
+          <P class="text-white footer-p">
           Địa chỉ giao dịch:</P>
           </div>
           <div>
-            <p class="text-white">Số 54 lô 18D Lê Hồng Phong, Phường Đằng Lâm, Quận Hải An, TP Hải Phòng
+            <p class="text-white footer-p">Số 54 lô 18D Lê Hồng Phong, Phường Đằng Lâm, Quận Hải An, TP Hải Phòng
             </p>
           </div>
         </div>
         <div class="title-size d-flex align-items-center">
           <div class="d-flex size d-flex align-items-center"> 
               <img class="img-size" src="<?php bloginfo('template_url'); ?>/assets/mail.png" alt=""/>
-              <p class="text-white">
+              <p class="text-white footer-p">
               Email:</p>
           </div>
             <div>
             <a href="mailto:global@haiphuongshipping.com" class="d-flex">
-              <p class="text-white">
+              <p class="text-white footer-p">
               global@haiphuongshipping.com
               </p>
             </a>
@@ -42,13 +42,13 @@
           <div class="title-size d-flex align-items-center">
             <div class="d-flex size d-flex align-items-center" >
               <img  class="img-size"src="<?php bloginfo('template_url'); ?>/assets/phone.png" alt=""/>
-              <p class="text-white">
+              <p class="text-white footer-p">
               Điện Thoại:
               </p>
             </div>
               <div>
               <a href="tel:+84 916.114.888" class="d-flex me-5">
-                <p class="text-white">
+                <p class="text-white footer-p">
                 +84916.114.888
                 </p>
               </a>

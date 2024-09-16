@@ -6,8 +6,8 @@
 <?php get_header(); ?>
 <div>
     <div class="position-relative text-center">
-        <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/intro-bg.png" alt="Hai Phuong Shipping" >
-        <h2 class="position-absolute text-white cover-top-title">LIÊN HỆ</h2>
+        <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/contact-bg.png" alt="Hai Phuong Shipping" >
+        <h2 class="position-absolute text-white center-title w-100 text-center fs-1">LIÊN HỆ</h2>
     </div>
     <div class="w-75 m-auto py-5 lh-base d-flex flex-column">
         <p>
