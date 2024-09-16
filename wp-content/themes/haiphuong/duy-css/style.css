@@ -166,7 +166,7 @@
     font-weight: 500;
 }
 .d-box-1 {
-    width: 75%;
+    width: 45vw;
     height: auto;
     padding-top: 50px;
     padding-bottom: 15%;
@@ -183,6 +183,9 @@
     font-weight: 300;
     line-height: 1.75;
 }
+.open-modal {
+    width: 100vw;
+}
 @media (min-width:768px) {
     .sv-conten-title{
         width: 54vw;
@@ -195,12 +198,19 @@
         font-size: 25px;
     }
     .sv-button {
-        font-size: 35px;
+        font-size: 2vw;
     }
     .content-1 {
         font-size: 45px;
+    }
     .title-1 {
         font-size: 30px;
+    }
+    .d-box-1 {
+        width: 35vw;
+    }
+    .open-modal {
+        width: 45vw;
     }
 
 }
@@ -227,7 +237,7 @@
     padding-bottom: 200px;
 }
 .item-fleet {
-    padding: 0 10px;
+    padding: 0 10px 0 10px;
     width: 100%;
     height: auto;
     margin-top: 100px;

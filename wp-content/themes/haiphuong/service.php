@@ -54,14 +54,14 @@ $service_query = new WP_Query(array(
                 Dịch vụ vận tải hàng hóa bằng đường biển
             </div>
             <div id="service-modal-content" class="title-1">
-            Vận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóaVận chuyển hàng hóa
+            
             </div>
         </div>
        
         <div class="button-modal ">
-            <button class="button-modal d-flex justify-content-center align-items-center">
+            <a href="<?php echo site_url('/contact'); ?>" class="button-modal d-flex justify-content-center align-items-center ">
                     Liên hệ ngay
-            </button>
+            </a>
         </div>    
     </div>
  
