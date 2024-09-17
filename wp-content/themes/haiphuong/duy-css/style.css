@@ -74,9 +74,7 @@
 
 }
 /* service */
-.d-service {
-    /* padding: 0px 10px 0px 10px; */
-}
+
 .sv-conten {
     height: 40vw;
     width: 100%;
@@ -227,7 +225,7 @@
 }
 .f-h1 {
     font-size: 7vw;
-    color: #0852c2;
+    color: #405E87;
     padding-right: 10vw;
     margin-bottom: 10vw;
     font-family: Oswald Bold Bold;
@@ -238,11 +236,9 @@
 .fleet{
     padding-bottom: 200px;
 }
-.item-fleet {
+.d-item-fleet {
     padding: 0 10px 0 10px;
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
+    
 }
 .f-img {
     width: 100%;
@@ -251,7 +247,7 @@
     object-fit: cover;
 }
 .name-ship {
-    color: #0852c2;
+    color: #405E87;
     font-size: 20px;
     font-weight: 700;
     margin-top: 10px;
@@ -269,13 +265,26 @@
     cursor: pointer;
     padding: 0 5px;
     font-weight: 600;
+    color: #405E87;
+    
+}
+.f-item {
+    padding: 0 10px;
+}
+.fleet-box {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 15%;
+    
     
 }
 
+
 @media (min-width:768px) {
-    .item-fleet {
+    /* .d-item-fleet {
         width: 45%;
-    }    
+    }     */
     .name-ship {
         font-size: 30px;
     }
@@ -284,5 +293,11 @@
     }
     .more {
         font-size: 30px;
+    }
+    .fleet-box {
+        width: 40vw;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 15%;
     }
 }
