@@ -13,6 +13,21 @@ $(document).ready(function () {
     $('#service-modal-title').text(textTitle);
     $('#service-modal-content').text(textContent);
   });
+  // fleet đội tàu
+  $('.d-item-fleet').click(function () {
+    const currentId = $(this).attr('id');
+    const currentIndex = currentId?.split('-')[2];
+    const itemId = '#fleet-title-' + currentIndex;
+    console.log(itemId);
+    const contentId = '#fleet-content-' + currentIndex;
+
+    const textContent = $(contentId).text();
+    console.log(textContent);
+
+    $('#fleet-title').text(textTitle);
+    $('#fleet-content').text(textContent);
+  });
+
 
   window.onscroll = function () {
     navbarSticky();
