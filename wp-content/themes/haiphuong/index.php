@@ -194,7 +194,6 @@ $ships_query = new WP_Query(array(
 </section>
 
 <section class="space-container">
-  <!-- <img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/bg-space.png" alt=""> -->
 </section>
 
 <section class="container py-4">
