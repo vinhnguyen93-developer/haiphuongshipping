@@ -1,13 +1,12 @@
 <?php 
 /*
- Template Name: Service
+ Template Name: Ships
  */ 
 get_header();
-$fleet_query = new WP_Query(array(
-    'post_type' => 'fleet',
-    'posts_per_page' => 5,
-    'order'          => 'ASC',
-  ));
+
+$ship_query = new WP_Query(array(
+'post_type' => 'fleet',
+));
 
 ?>
 
@@ -18,84 +17,44 @@ $fleet_query = new WP_Query(array(
         </h1>
     </div>
     <div class="f-item d-flex flex-wrap justify-content-evenly align-items-center">
-        
         <?php 
-            
-            if($fleet_query -> have_posts()):
-            while($fleet_query -> have_posts()): $fleet_query -> the_post();
-                $fleet_number = $fleet_query -> current_post + 1;
-                $fleet_title = get_the_title();
-                $fleet_description = get_the_excerpt();
-                $fleet_image_src = get_field('image', get_the_ID());
-            ?>
-        
-        
-            <div id="d-fleet-<?php echo $fleet_number; ?>" class="f-1 fleet-box d-flex flex-column">
-                <img  class="f-img"src="<?php echo $fleet_image_src; ?>" alt=""/>
-                <!-- <img  class="f-img"src="<?php bloginfo('template_url'); ?>/assets/ocengold.jpg" alt=""/> -->
-                <h2 id="fleet-content-<?php echo $fleet_number; ?>" class="name-ship text-center">
-                    <?php echo $fleet_title; ?>
-                    OCEAN GOLD
-                </h2>
-                <p id="fleet-title-<?php echo $fleet_number; ?>" class="title">
-                    SDBC, 1996BLT, PANAMA FLAG JAPAN TSUNEISHI BLT 45,622DWT ON S.DRAFT: 11.62M TPC:49.82 LOA/BEAM/DEPTH 185.74/ 30.4/ 16.5 GRT/ NRT 26,047/ 14,880 GRAIN/ 57,208.40 M3, BALE/ 55,564.90M3, 5H/5H
-                    <?php echo $fleet_description; ?>
-                </p>
-                <a href="" class="more">Xem thêm ></a>
-            </div>
-            <?php 
-          endwhile;
-        endif;
-
+        if($ship_query -> have_posts()):
+            while($ship_query -> have_posts()): $ship_query -> the_post();
+                $ship_image_src = get_field('image_ship', get_the_ID());
+                $ship_name = get_field('ship_name', get_the_ID());
+                $ship_type_year = get_field('ship_type_year', get_the_ID());
+                $ship_flag = get_field('flag', get_the_ID());
+                $ship_builder_place = get_field('shipbuilder_place', get_the_ID());
+                $ship_dwt = get_field('dwt', get_the_ID());
+                $ship_tons = get_field('tons_per_centimeter', get_the_ID());
+                $ship_vessel_dimensions = get_field('vessel_dimensions', get_the_ID());
+                $ship_grt_nrt = get_field('grt_nrt', get_the_ID());
+                $ship_cargo_hold = get_field('cargo_hold_capacity', get_the_ID());
+                $ship_number_of_cargo = get_field('number_of_cargo', get_the_ID());
+                $ship_hatch_cover_type = get_field('hatch_cover_type', get_the_ID());
+                $ship_hatch_dimensions = get_field('hatch_dimensions', get_the_ID());
+                $ship_crane_grab = get_field('crane_grab', get_the_ID());
+                $ship_protection_indemnity = get_field('protection_indemnity', get_the_ID());
         ?>
-        
-         
-        <!-- <div id="d-fleet" class="item-fleet d-flex">
-            <div id="d-fleet-2" class="f-2">
-                <img  class="f-img"src="<?php bloginfo('template_url'); ?>/assets/sungold.jpg" alt=""/>
-                <h2 id="fleet-title-2" class="name-ship text-center">
-                    M/V SUN GOLD
-                </h2>
-                <p class="title">
-                    SDBC, 1996BLT, PANAMA FLAG JAPAN TSUNEISHI BLT 45,622DWT ON S.DRAFT: 11.62M TPC:49.82 LOA/BEAM/DEPTH 185.74/ 30.4/ 16.5 GRT/ NRT 26,047/ 14,880 GRAIN/ 57,208.40 M3, BALE/ 55,564.90M3, 5H/5H
-                    </p>
-                <a href="" class="more">Xem thêm ></a>
-            </div>
-        </div>
-         
-        <div id="d-fleet" class="item-fleet d-flex">
-            <div id="d-fleet-3" class="f-3">
-                <img  class="f-img"src="<?php bloginfo('template_url'); ?>/assets/newgold.jpg" alt=""/>
-                <h2 id="fleet-title-3" class="name-ship text-center">
-                    M/V NEW GOLD
-                </h2>
-                <p class="title">
-                    SDBC, 1996BLT, PANAMA FLAG JAPAN TSUNEISHI BLT 45,622DWT ON S.DRAFT: 11.62M TPC:49.82 LOA/BEAM/DEPTH 185.74/ 30.4/ 16.5 GRT/ NRT 26,047/ 14,880 GRAIN/ 57,208.40 M3, BALE/ 55,564.90M3, 5H/5H
-                </p>
-                <a href="" class="more">Xem thêm ></a>
-            </div>
-        </div>
-         
-        <div id="d-fleet" class="item-fleet d-flex">
-            <div id="d-fleet-4" class="f-4">
-                <img  class="f-img"src="<?php bloginfo('template_url'); ?>/assets/ttgold.jpg" alt=""/>
-                <h2 id="fleet-title-4" class="name-ship text-center">
-                    M/V T&T GOLD
-                </h2>
-                <p class="title">
-                    SDBC, 1996BLT, PANAMA FLAG JAPAN TSUNEISHI BLT 45,622DWT ON S.DRAFT: 11.62M TPC:49.82 LOA/BEAM/DEPTH 185.74/ 30.4/ 16.5 GRT/ NRT 26,047/ 14,880 GRAIN/ 57,208.40 M3, BALE/ 55,564.90M3, 5H/5H
-                </p>
-                <a href="" class="more">Xem thêm ></a>
-            </div>
-        </div> -->
-        
+                <div class="f-1 fleet-box d-flex flex-column">
+                    <img  class="f-img"src="<?php echo $ship_image_src; ?>" alt=""/>
+                    <h2 class="name-ship text-center text-uppercase fs-3"><?php echo $ship_name; ?></h2>
+                    <div class="mt-4">
+                        <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_type_year . ', ' . $ship_flag . ' ' . $ship_builder_place; ?></p>
+                        <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_dwt . ' ' . $ship_tons; ?></p>
+                        <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_vessel_dimensions . ' ' . $ship_grt_nrt; ?></p>
+                        <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_cargo_hold . ', ' . $ship_number_of_cargo; ?></p>
+                        <p class="fw-lighter lh-base text-uppercase ship-item-text">h.cover type: <?php echo $ship_hatch_cover_type; ?></p>
+                        <p class="fw-lighter lh-base text-uppercase ship-item-text">hatch size hold <?php echo $ship_hatch_dimensions; ?></p>
+                        <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_crane_grab . ' p&i: ' . $ship_protection_indemnity; ?></p>
+                    </div>
+                    <a href="" class="more fs-5 mt-4">Xem thêm <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+        <?php 
+            endwhile;
+        endif;
+        ?>        
     </div>
-
-
-
-
-
-    
 </div>
 
 
