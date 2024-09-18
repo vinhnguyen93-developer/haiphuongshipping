@@ -20,6 +20,7 @@ $ship_query = new WP_Query(array(
         <?php 
         if($ship_query -> have_posts()):
             while($ship_query -> have_posts()): $ship_query -> the_post();
+                $ship_guid = get_the_guid();
                 $ship_image_src = get_field('image_ship', get_the_ID());
                 $ship_name = get_field('ship_name', get_the_ID());
                 $ship_type_year = get_field('ship_type_year', get_the_ID());
@@ -36,7 +37,7 @@ $ship_query = new WP_Query(array(
                 $ship_crane_grab = get_field('crane_grab', get_the_ID());
                 $ship_protection_indemnity = get_field('protection_indemnity', get_the_ID());
         ?>
-                <div class="f-1 fleet-box py-4 d-flex flex-column">
+                <a href="<?php echo $ship_guid; ?>" class="f-1 fleet-box py-4 d-flex flex-column text-black">
                     <img  class="f-img"src="<?php echo $ship_image_src; ?>" alt=""/>
                     <h2 class="name-ship text-center text-uppercase fs-3"><?php echo $ship_name; ?></h2>
                     <div class="mt-4">
@@ -48,8 +49,8 @@ $ship_query = new WP_Query(array(
                         <p class="fw-lighter lh-base text-uppercase ship-item-text">hatch size hold <?php echo $ship_hatch_dimensions; ?></p>
                         <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_crane_grab . ' p&i: ' . $ship_protection_indemnity; ?></p>
                     </div>
-                    <a href="" class="more fs-6 mt-4">Xem thêm <i class="fa-solid fa-angle-right"></i></a>
-                </div>
+                    <p class="more fs-6 mt-4">Xem thêm <i class="fa-solid fa-angle-right"></i></p>
+                </a>
         <?php 
             endwhile;
         endif;
