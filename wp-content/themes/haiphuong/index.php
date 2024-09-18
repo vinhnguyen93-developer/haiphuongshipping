@@ -321,6 +321,9 @@ $ships_query = new WP_Query(array(
       <div class="client-item">
         <img width="150" class="bg-dark" src="<?php bloginfo('template_url'); ?>/assets/client-12.png" alt="">
       </div>
+      <div class="client-item">
+        <img src="<?php bloginfo('template_url'); ?>/assets/client-13.jpg" alt="">
+      </div>
     </div>
   </div>
 </section>
