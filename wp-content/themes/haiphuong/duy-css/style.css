@@ -111,8 +111,8 @@
     margin-top: 5vw;
 }
 .sv-img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    /* height: 100%; */
     aspect-ratio: 4/3;
   /* margin-bottom: 150px; */
 }
@@ -165,10 +165,10 @@
     font-weight: 500;
 }
 .d-box-1 {
-    width: 45vw;
+    width: 85%;
     height: auto;
     padding-top: 50px;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
 }
 .content-1 {
     font-size: 25px;
@@ -178,9 +178,10 @@
 }
 .title-1 {
     margin-top: 5px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.75;
+    width: 100%;
 }
 .open-modal {
     width: 100vw;
@@ -203,14 +204,13 @@
         font-size: 45px;
     }
     .title-1 {
-        font-size: 30px;
+        font-size: 27px;
     }
     .d-box-1 {
-        width: 35vw;
-        aspect-ratio: 4/3;
+        width: 80%;
     }
     .open-modal {
-        width: 45vw;
+        width: 33vw;
     }
 
 }
