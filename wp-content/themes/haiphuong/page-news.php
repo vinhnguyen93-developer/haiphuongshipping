@@ -22,18 +22,19 @@
       <?php 
       if($news_query -> have_posts()):
         while($news_query -> have_posts()): $news_query -> the_post();
+          $news_guid = get_the_guid();
           $news_title = get_the_title();
           $news_image_src = get_field('image', get_the_ID());
       ?>
       <div class="col-12 col-md-6">
-        <div class="new-item pb-2">
+        <a href="<?php echo $news_guid; ?>" class="d-block new-item pb-2">
           <img class="w-100 new-page-item-image" src="<?php echo $news_image_src; ?>" alt="">
           <h2 class="m-3 new-title fw-bold lh-base"><?php echo $news_title; ?></h2>
-          <a class="new-btn fw-semibold ms-3 mt-4 d-block" href="#">
+          <p class="new-btn fw-semibold ms-3 mt-4 d-block">
             Xem thêm
             <i class="fa-solid fa-angle-right"></i>
-          </a>
-        </div>
+          </p>
+        </a>
       </div>
       <?php 
         endwhile;
