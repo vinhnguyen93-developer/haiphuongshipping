@@ -145,6 +145,7 @@ $ships_query = new WP_Query(array(
         
         if($ships_query -> have_posts()):
           while($ships_query -> have_posts()): $ships_query -> the_post();
+            $ships_guid = get_the_guid();
             $ship_image_src = get_field('image_ship', get_the_ID());
             $ship_name = get_field('ship_name', get_the_ID());
             $ship_type_year = get_field('ship_type_year', get_the_ID());
@@ -162,7 +163,7 @@ $ships_query = new WP_Query(array(
             $ship_protection_indemnity = get_field('protection_indemnity', get_the_ID());
       ?>
       <div class="col-12 py-3 ship-item">
-        <div class="d-flex flex-column flex-md-row">
+        <a href="<?php echo $ships_guid; ?>" class="d-flex flex-column flex-md-row text-black">
           <div class="me-0 me-md-5 mb-3 mb-md-0">
             <img class="ship-image" src="<?php echo $ship_image_src; ?>" alt="">
           </div>
@@ -177,7 +178,7 @@ $ships_query = new WP_Query(array(
             <p class="fw-lighter lh-base text-uppercase ship-item-text">hatch size hold <?php echo $ship_hatch_dimensions; ?></p>
             <p class="fw-lighter lh-base text-uppercase ship-item-text"><?php echo $ship_crane_grab . ' p&i: ' . $ship_protection_indemnity; ?></p>
           </div>
-        </div>
+        </a>
       </div>
       <?php 
         endwhile;
