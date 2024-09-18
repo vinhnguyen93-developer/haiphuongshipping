@@ -108,9 +108,10 @@
   margin-top: 5vw;
 }
 .sv-img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 4/3;
+    width: auto;
+    /* height: 100%; */
+    aspect-ratio: 4/3;
+
   /* margin-bottom: 150px; */
 }
 .sv-button {
@@ -161,10 +162,13 @@
   font-weight: 500;
 }
 .d-box-1 {
-  width: 45vw;
-  height: auto;
-  padding-top: 50px;
-  padding-bottom: 15%;
+
+    width: 85%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 10%;
+
+
 }
 .content-1 {
   font-size: 25px;
@@ -173,41 +177,45 @@
   line-height: 1.25;
 }
 .title-1 {
-  margin-top: 5px;
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 1.75;
+
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.75;
+    width: 100%;
+
 }
 .open-modal {
   width: 100vw;
 }
-@media (min-width: 768px) {
-  .sv-conten-title {
-    width: 54vw;
-  }
-  .sv-h2 {
-    font-size: 80px;
-    margin-bottom: 10px;
-  }
-  .hps {
-    font-size: 25px;
-  }
-  .sv-button {
-    font-size: 26px;
-  }
-  .content-1 {
-    font-size: 45px;
-  }
-  .title-1 {
-    font-size: 30px;
-  }
-  .d-box-1 {
-    width: 35vw;
-    aspect-ratio: 4/3;
-  }
-  .open-modal {
-    width: 45vw;
-  }
+
+@media (min-width:768px) {
+    .sv-conten-title{
+        width: 54vw;
+    }
+    .sv-h2{
+        font-size: 80px;
+        margin-bottom: 10px;
+    }
+    .hps{
+        font-size: 25px;
+    }
+    .sv-button {
+        font-size: 26px;
+    }
+    .content-1 {
+        font-size: 45px;
+    }
+    .title-1 {
+        font-size: 27px;
+    }
+    .d-box-1 {
+        width: 80%;
+    }
+    .open-modal {
+        width: 33vw;
+    }
+
 }
 /* Đội tàu  */
 .f-conten {
