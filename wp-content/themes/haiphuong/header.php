@@ -14,6 +14,16 @@
 <link href="<?php bloginfo('template_url'); ?>/duy-css/style.css" rel="stylesheet">
 <link href="<?php bloginfo('template_url'); ?>/luan-css/style.css" rel="stylesheet">
 <link href="<?php bloginfo('template_url'); ?>/vinh-css/style.css" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2CP4SY5D4L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2CP4SY5D4L');
+</script>
 </head>
   <body>
     <div>
