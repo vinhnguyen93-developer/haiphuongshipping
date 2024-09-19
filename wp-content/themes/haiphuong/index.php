@@ -187,7 +187,7 @@ $ships_query = new WP_Query(array(
     </div>
 
     <div class="mt-4 text-center">
-      <a href="<?php echo site_url('/ships'); ?>" class="new-btn fs-4">
+      <a href="<?php echo site_url('/fleet'); ?>" class="new-btn fs-4">
         Xem thêm
         <i class="fa-solid fa-angle-right"></i>
       </a>

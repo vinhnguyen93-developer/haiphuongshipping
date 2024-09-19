@@ -55,7 +55,11 @@
         $path_name;
         if(strlen($path) > 1) {
           $array_path = explode('/', $path);
-          $path_name = $array_path[1];
+          if(count($array_path) === 4) {
+            $path_name = $array_path[2];
+          } else {
+            $path_name = $array_path[1];
+          }
         } else {
           $path_name = $path;
         }
@@ -81,8 +85,8 @@
               <li class="mx-3 pb-1 navbar-item-hover <?php echo ($path_name == 'news' ? 'navbar-item-active' : ''); ?>">
                 <a href="<?php echo site_url('/news'); ?>">Tin tức & Tuyển dụng</a>
               </li>
-              <li class="mx-3 pb-1 navbar-item-hover <?php echo ($path_name == 'ships' ? 'navbar-item-active' : ''); ?>">
-                <a href="<?php echo site_url('/ships'); ?>">Đội tàu</a>
+              <li class="mx-3 pb-1 navbar-item-hover <?php echo ($path_name == 'fleet' ? 'navbar-item-active' : ''); ?>">
+                <a href="<?php echo site_url('/fleet'); ?>">Đội tàu</a>
               </li>
               <li class="mx-3 pb-1 navbar-item-hover <?php echo ($path_name == 'contact' ? 'navbar-item-active' : ''); ?>">
                 <a href="<?php echo site_url('/contact'); ?>">Liên hệ</a>
@@ -132,7 +136,7 @@
                 <a class="navbar-item-hover <?php echo ($path_name == 'news' ? 'navbar-item-active' : ''); ?>" href="<?php echo site_url('/news'); ?>">Tin tức & tuyển dụng</a>
               </li>
               <li class="my-3">
-                <a class="navbar-item-hover <?php echo ($path_name == 'ships' ? 'navbar-item-active' : ''); ?>" href="<?php echo site_url('/ships'); ?>">Đội tàu</a>
+                <a class="navbar-item-hover <?php echo ($path_name == 'fleet' ? 'navbar-item-active' : ''); ?>" href="<?php echo site_url('/fleet'); ?>">Đội tàu</a>
               </li>
               <li class="my-3">
                 <a class="navbar-item-hover <?php echo ($path_name == 'contact' ? 'navbar-item-active' : ''); ?>" href="<?php echo site_url('/contact'); ?>">Liên hệ</a>
