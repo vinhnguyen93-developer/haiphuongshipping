@@ -55,11 +55,7 @@
         $path_name;
         if(strlen($path) > 1) {
           $array_path = explode('/', $path);
-          if(count($array_path) === 4) {
-            $path_name = $array_path[2];
-          } else {
-            $path_name = $array_path[1];
-          }
+          $path_name = $array_path[1];
         } else {
           $path_name = $path;
         }
