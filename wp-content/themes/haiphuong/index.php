@@ -87,7 +87,7 @@ $ships_query = new WP_Query(array(
       <div class="text-center text-md-start px-3 px-md-0">
         <h2 class="section-title mb-5 about-us-title">Về chúng tôi</h2>
         <h3 class="about-us-sub-title fw-semibold mb-3 lh-base lh-md-lg text-start">
-          Thành lập vào 31 tháng 5 năm 2018, Công ty TNHH vận tải biển Hải Phương (Hai Phuong Shipping Co., Ltd - HPS) rà đời với sứ mệnh phục vụ vận chuyển hàng hóa nội thủy và vận tải biển quốc tế với dịch vụ tốt nhất, đưa ra những giải pháp hữu ích nhất cho khách hàng.
+          Thành lập vào 31 tháng 5 năm 2018, Công ty TNHH vận tải biển Hải Phương (Hai Phuong Shipping Co., Ltd - HPS) ra đời với sứ mệnh phục vụ vận chuyển hàng hóa nội thủy và vận tải biển quốc tế với dịch vụ tốt nhất, đưa ra những giải pháp hữu ích nhất cho khách hàng.
         </h3>
         <p class="fw-light lh-base text-start">
           Với phương châm "Sharing Experience, Serving Excellence!" - "Chia sẻ hết mình, Phục vụ tận tình!" đội ngũ HPS luôn nỗ lực trau dồi, ý thức sứ mệnh và cam kết hỗ trợ, đáp ứng mọi nhu cầu của khách hàng ngày càng tốt hơn.
