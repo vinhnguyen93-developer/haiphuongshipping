@@ -30,11 +30,11 @@
       <header class="header d-none d-md-block">
         <div class="container d-flex align-items-center justify-content-between h-100">
           <div class="d-flex">
-            <a href="tel:+84 916.114.888" class="d-flex me-5">
+            <a href="tel:+84 945.776.999" class="d-flex me-5">
               <div class="me-3">
                 <i class="fa-solid fa-phone text-white"></i>
               </div>
-              <h3 class="text-white">+84 916.114.888</h3>
+              <h3 class="text-white">+84 945.776.999</h3>
             </a>
             <a href="mailto:global@haiphuongshipping.com" class="d-flex">
               <div class="me-3">

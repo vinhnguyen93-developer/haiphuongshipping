@@ -21,14 +21,14 @@
             ・ Email: <a class="text-blue" href="mailto:global@haiphuongshipping.com">global@haiphuongshipping.com</a>
         </p>
         <p class="text-blue mb-2">
-            ・ Điện thoại: <a class="text-blue" href="tel:+84 916.114.888">+84 916.114.888</a>
+            ・ Điện thoại: <a class="text-blue" href="tel:+84 945.776.999">+84 945.776.999</a>
         </p>
 
         <p class="text-blue">
             ・ Điện thoại các phòng ban:
         </p>
         <p>
-            - Phòng khai thác: <a class="text-black" href="tel:+84 912.859.925">+84 912.859.925</a> - Mr An
+            - Phòng khai thác: <a class="text-black" href="tel:+84 912.185.925">+84 912.185.925</a> - Mr An
         </p>
         <p class="text-blue mb-2">
             ・ Email: <a class="text-blue" href="mailto:global@haiphuongshipping.com">global@haiphuongshipping.com</a>
