@@ -13,7 +13,7 @@
         <h1 class="text-blue fs-2 lh-sm">HPS - Chia sẻ hết mình <br/> Phục vụ tận tình</h1>
     </div>
     <div class="w-75 m-auto d-flex justify-content-between lh-lg sp-column ">
-        <img class="w-50 sp-100" src="<?php bloginfo('template_url'); ?>/assets/hp-office.png" alt="Hai Phuong Shipping" />
+        <img class="w-50 sp-100 mb-3" src="<?php bloginfo('template_url'); ?>/assets/hp-office.png" alt="Hai Phuong Shipping" />
         <p>
             &nbsp;&nbsp;&nbsp;&nbsp;Thành lập vào 31 tháng 05 năm 2018 với tiền thân là Công Ty TNHH vận tải và thương mại An Thuân với hơn 15 năm kinh nghiệm, Công Ty TNHH Vận tải biển Hải Phương (tên tiếng Anh là Hai Phuong Shipping Co., Ltd - HPS) ra đời với sứ mệnh phục vụ vận chuyển hàng hóa nội thủy và vận tải biển quốc tế với dịch vụ tốt nhất, đưa ra những giải pháp hữu ích nhất cho khách hàng.
             <br/>
