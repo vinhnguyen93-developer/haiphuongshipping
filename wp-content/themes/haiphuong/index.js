@@ -28,23 +28,6 @@ $(document).ready(function () {
     $('#fleet-content').text(textContent);
   });
 
-
-  window.onscroll = function () {
-    navbarSticky();
-  };
-
-  var header = document.getElementById('navbar-sticky');
-  var sticky = header.offsetTop;
-
-  function navbarSticky() {
-    if (window.pageYOffset > sticky) {
-      console.log(header);
-      header.classList.add('sticky');
-    } else {
-      header.classList.remove('sticky');
-    }
-  }
-
   $('.comments-slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

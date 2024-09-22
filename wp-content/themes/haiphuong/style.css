@@ -211,5 +211,7 @@ a {
 @media (max-width: 768px) {
   .section-title {
     font-size: 26px;
+    text-align: center;
+    line-height: 1.5px;
   }
 }
