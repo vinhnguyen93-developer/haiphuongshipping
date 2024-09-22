@@ -46,6 +46,7 @@
   color: #2467c7;
   border-bottom: 2px solid white;
   transition: all 0.3s ease;
+  font-family: 'SVN-Gilory-Bold';
 }
 
 .navbar-item-hover a {
@@ -97,12 +98,12 @@
 }
 
 .why {
-  background-color: #eff1f1;
+  background-color: #f5f7f8;
 }
 
 .why-item {
   position: relative;
-  background-color: #f6f5f4;
+  /* background-color: #f6f5f4; */
   height: 100%;
   cursor: default;
   z-index: 1;
@@ -116,7 +117,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f6f5f4;
+  background-color: #f5f7f8;
   z-index: -1;
 }
 
@@ -142,21 +143,23 @@
 }
 
 .why-item-title {
-  color: #405e87;
+  color: #2b5e86;
+  font-family: 'SVN-Gilory-Bold';
+  font-size: 18px;
 }
 
 .why-item-text {
-  color: #b7b6b6;
-  font-size: 14px;
+  color: #6e6a6b;
+  font-size: 15px;
 }
 
 .about-us {
-  background-color: #faffff;
+  background-color: #22559dcc;
 }
 
 .about-us-image {
-  width: 425px;
-  height: 500px;
+  width: 300px;
+  height: 400px;
 }
 
 .about-us-title::after {
@@ -167,8 +170,9 @@
 }
 
 .about-us-sub-title {
-  color: #415f8a;
   font-size: 18px;
+  font-family: 'SVN-Gilory-Light';
+  line-height: 2;
 }
 
 .about-us-btn {
@@ -181,20 +185,6 @@
   background-color: #cea33cd8;
 }
 
-.service {
-  background-image: url('../assets/bg-service.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.service-layer {
-  background-color: #3956a0b0;
-}
-
-.service-body {
-  height: 420px;
-}
-
 .service-content {
   column-gap: 40px;
 }
@@ -203,41 +193,17 @@
   width: 20%;
 }
 
-.service-number {
-  color: #cea33c;
-  font-size: 20px;
-  font-weight: 600;
+.service-image {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 8px 8px 18px 0px #000000bf;
 }
 
 .service-title {
-  color: #faffff;
-  font-size: 20px;
-}
-
-.service-text {
-  max-height: 0;
-  opacity: 0;
-  font-size: 16px;
-  transition: max-height 1.2s ease;
-}
-
-.service-angles {
-  font-size: 22px;
-}
-
-.service-angles {
-  transition: all 0.5s linear;
-}
-
-.service-item:hover > .service-text {
-  max-height: 100%;
-  opacity: 1;
-  animation: fade_in_show 1s;
-}
-
-.service-item:hover > .service-angles {
-  color: #cea33c !important;
-  transform: rotate(90deg);
+  color: #2b5e86;
+  font-family: 'SVN-Gilory-Bold';
 }
 
 .new-item {
@@ -523,29 +489,5 @@
     padding-bottom: 0;
     border-left: none;
     margin-top: 30px;
-  }
-}
-
-@keyframes fade_in_show {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fade_in_angles {
-  0% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
