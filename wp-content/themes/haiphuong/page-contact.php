@@ -20,18 +20,48 @@
         <p class="text-blue">
             ・ Email: <a class="text-blue" href="mailto:global@haiphuongshipping.com">global@haiphuongshipping.com</a>
         </p>
-        <p class="text-blue">
-            ・ Điện thoại: <a class="text-blue" href="tel:+84 916.114.888">+84 916.114.888</a>
+        <p class="text-blue mb-2">
+            ・ Điện thoại: <a class="text-blue" href="tel:+84 945.776.999">+84 945.776.999</a>
         </p>
+
         <p class="text-blue">
             ・ Điện thoại các phòng ban:
         </p>
         <p>
-            - Phòng khai thác: <a class="text-black" href="tel:+84 912.859.925">+84 912.859.925</a> - Mr An
+            - Phòng khai thác: <a class="text-black" href="tel:+84 912.185.925">+84 912.185.925</a> - Mr An
         </p>
+        <p class="text-blue mb-2">
+            ・ Email: <a class="text-blue" href="mailto:global@haiphuongshipping.com">global@haiphuongshipping.com</a>
+        </p>
+
+        <p>
+            - Phòng kỹ thuật: 
+        </p>
+        <p class="text-blue mb-2">
+            ・ Email: <a class="text-blue" href="mailto:global@haiphuongshipping.com">tech@haiphuongshipping.com</a>
+        </p>
+
         <p>
             - Phòng thuyền viên: <a class="text-black" href="tel:+84 917.701.618">+84 917.701.618</a> - Mr Trung
         </p>
+        <p class="text-blue mb-2">
+            ・ Email: <a class="text-blue" href="mailto:global@haiphuongshipping.com">crew@haiphuongshipping.com</a>
+        </p>
+
+        <p>
+            - Phòng an toàn pháp chế: 
+        </p>
+        <p class="text-blue mb-2">
+            ・ Email: <a class="text-blue" href="mailto:global@haiphuongshipping.com">ism@haiphuongshipping.com</a>
+        </p>
+
+        <p>
+            - Phòng kế toán: 
+        </p>
+        <p class="text-blue mb-2">
+            ・ Email: <a class="text-blue" href="mailto:global@haiphuongshipping.com">finance@haiphuongshipping.com</a>
+        </p>
+
         <p>
             - Hotline: <a class="text-black" href="tel:+84 945.776.999">+84 945.776.999</a> - Ms Thúy
         </p>
