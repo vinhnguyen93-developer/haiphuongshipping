@@ -22,6 +22,36 @@ BlankSlate is distributed under the terms of the GNU GPL
   --second-color: #cea33c;
 }
 
+@font-face {
+  font-family: 'SVN-Gilory-Light';
+  src: url('./fonts/SVN-Gilroy-Light.otf');
+}
+
+@font-face {
+  font-family: 'SVN-Gilory-Medium';
+  src: url('./fonts/SVN-Gilroy-Medium.otf');
+}
+
+@font-face {
+  font-family: 'SVN-Gilory-SemiBold';
+  src: url('./fonts/SVN-Gilroy-SemiBold.otf');
+}
+
+@font-face {
+  font-family: 'SVN-Gilory-Bold';
+  src: url('./fonts/SVN-Gilroy-Bold.otf');
+}
+
+@font-face {
+  font-family: 'SVN-Gilory-Regular';
+  src: url('./fonts/SVN-Gilroy-Regular.otf');
+}
+
+@font-face {
+  font-family: 'SVN-Gilory-XBold';
+  src: url('./fonts/SVN-Gilroy-XBold.otf');
+}
+
 html,
 body,
 div,
@@ -127,7 +157,7 @@ section {
 
 body {
   line-height: 1;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'SVN-Gilory-Medium', sans-serif;
   font-size: 16px;
 }
 
