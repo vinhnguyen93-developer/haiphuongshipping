@@ -214,7 +214,7 @@ $ships_query = new WP_Query(array(
     <div class="col-12 col-md-4">
       <a href="<?php echo $news_guid; ?>" class="d-block new-item p-1">
         <img class="new-image" src="<?php echo $news_image_src; ?>" alt="">
-        <h2 class="new-title fw-bold lh-base mt-2 text-truncate mb-2"><?php echo $news_title; ?></h2>
+        <h2 class="new-title lh-base mt-2 text-truncate mb-2"><?php echo $news_title; ?></h2>
         <p class="new-description text-black"><?php echo $news_description; ?></p>
       </a>
     </div>
