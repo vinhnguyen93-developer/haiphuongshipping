@@ -190,7 +190,7 @@ a {
 
 .section-title {
   font-size: 32px;
-  font-weight: 600;
+  font-family: 'SVN-Gilory-SemiBold';
   color: #205599;
   position: relative;
 }
@@ -213,11 +213,13 @@ a {
   display: flex;
   justify-content: center;
 }
+
 .pagination-page .current {
   border-color: black;
   color: white !important;
   background-color: #205599;
 }
+
 .pagination-page .page-numbers {
   display: block;
   width: 35px;
@@ -229,6 +231,7 @@ a {
   margin: 0 0.3rem;
   transition: all linear 0.25s;
 }
+
 .pagination-page .page-numbers:hover {
   border-color: black;
   color: white;
