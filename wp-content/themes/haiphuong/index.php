@@ -15,7 +15,7 @@ $news_query = new WP_Query(array(
 
 $ships_query = new WP_Query(array(
   'post_type' => 'fleet',
-  'posts_per_page' => 4,
+  'posts_per_page' => 6,
 ));
 
 ?>
@@ -140,7 +140,7 @@ $ships_query = new WP_Query(array(
       <h2 class="section-title">Đội tàu công ty</h2>
     </div>
   
-    <div class="row gy-4 gy-md-0 gx-0 gx-md-5">
+    <div class="row gy-4 gx-0 gx-md-5">
       <?php 
         
         if($ships_query -> have_posts()):
