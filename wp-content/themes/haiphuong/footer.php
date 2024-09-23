@@ -11,7 +11,7 @@
       </div>
     </div>
       
-    <div class="information p-3 d-flex flex-column align-item-center justify-content-center">
+    <div class="information p-2 d-flex flex-column align-item-center justify-content-center">
         
       <div class="d-flex d-flex flex-column mb-3 ">
           <div>

@@ -29,13 +29,13 @@
   
 }
 .information {
-  width: 60%;
+  width: 100%;
   font-size: 22px;
   /* min-width: 452px; */
-  flex-basis: 45%;
+  /* flex-basis: 45%; */
   font-size: 15px;
   gap: 25px;
-  height: 300px;
+  /* height: 300px; */
 }
 
 .bi {
@@ -74,14 +74,20 @@
   .footer-p {
     font-size: 3.8vw;
   }
+  .d-menu {
+    width: 15vw;
+  }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
+  .information {
+    width: 60%;
+  }
   .footer-h1 {
-    font-size: 26px;
+    font-size: 2.5vw;
   }
   .footer-p {
-    font-size: 24px;
+    font-size: 1.8vw;
   }
   .size {
     min-width: 200px;
@@ -93,7 +99,6 @@
   .d-menu {
     margin-bottom: 16px;
     display: flex;
-    width: 20vw;
   }
   .d-menu-item {
     margin-top: 13px;
