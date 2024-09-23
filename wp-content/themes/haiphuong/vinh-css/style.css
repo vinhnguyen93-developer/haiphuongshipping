@@ -272,12 +272,24 @@
 }
 
 .new-title {
-  color: #405e87;
+  color: #22559d;
   font-size: 18px;
+  font-family: 'SVN-Gilory-Bold';
+}
+
+.new-description {
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .new-btn {
-  color: #405e87;
+  color: #22559d;
 }
 
 .ship {
@@ -312,6 +324,7 @@
   top: 0;
   bottom: 0;
   left: 0;
+  right: 0;
   background-color: #22559db3;
   opacity: 0;
   transition: opacity 0.3s linear;
@@ -371,37 +384,44 @@
   font-family: 'SVN-Gilory-Light';
 }
 
+.new-page-top {
+  background-color: #fcfafa;
+}
+
 .new-page-image {
-  height: 600px;
+  height: 350px;
   object-fit: cover;
 }
 
 .new-page-item-image {
-  height: 25vw;
+  height: 20vw;
 }
 
-.news-page-title {
-  right: 40px;
-  color: #2260db;
-  font-weight: 600;
-  font-size: 56px;
+.new-page-title {
+  color: #205596;
+  font-family: 'SVN-Gilory-Bold';
+  font-size: 46px;
 }
 
-.news-page-title::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 220%;
-  height: 200%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.7) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  filter: blur(16px);
-  z-index: -1;
+.new-page-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.new-page-btn {
+  color: white;
+  background-color: #205596;
+  transition: background-color 0.25s linear;
+}
+
+.new-page-btn:hover {
+  background-color: #205596f4;
+  color: white;
 }
 
 .client-item img {
@@ -525,16 +545,17 @@
   }
 
   .new-page-image {
-    height: 170px;
+    height: 200px;
   }
 
   .new-page-item-image {
     height: 100%;
   }
 
-  .news-page-title {
-    font-size: 22px;
-    right: 15px;
+  .new-page-title {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.5;
   }
 
   .news-page-title::before {
