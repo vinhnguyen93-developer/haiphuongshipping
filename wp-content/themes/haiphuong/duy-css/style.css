@@ -6,7 +6,7 @@
       rgba(17, 86, 178, 0.5)
     ),
     url(../assets/ft-backgroud.jpg); */
-    background: #22559D;
+  background: #22559d;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -15,7 +15,7 @@
   padding: 0px 10px 0px 10px;
 }
 .map {
-  background: #FFFFFF;
+  background: #ffffff;
   width: 158px;
   height: 158px;
   /* min-width: 452px; */
@@ -26,7 +26,6 @@
 .logo-size {
   width: 100%;
   height: auto;
-  
 }
 .information {
   width: 100%;
@@ -44,10 +43,8 @@
 .footer-h1 {
   /* margin-bottom: 20px; */
   font-size: 20px;
-  
 }
 .d-logo-footer {
-  
 }
 .title-size {
   margin-top: 13px;
@@ -142,9 +139,9 @@
   margin-top: 5vw;
 }
 .sv-img {
-    width: auto;
-    /* height: 100%; */
-    aspect-ratio: 4/3;
+  width: auto;
+  /* height: 100%; */
+  aspect-ratio: 4/3;
 
   /* margin-bottom: 150px; */
 }
@@ -196,13 +193,10 @@
   font-weight: 500;
 }
 .d-box-1 {
-
-    width: 85%;
-    height: auto;
-    padding-top: 50px;
-    padding-bottom: 10%;
-
-
+  width: 85%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 10%;
 }
 .content-1 {
   font-size: 25px;
@@ -211,62 +205,74 @@
   line-height: 1.25;
 }
 .title-1 {
-
-    margin-top: 5px;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.75;
-    width: 100%;
-
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.75;
+  width: 100%;
 }
 .open-modal {
   width: 100vw;
 }
 
-@media (min-width:768px) {
-    .sv-conten-title{
-        width: 54vw;
-    }
-    .sv-h2{
-        font-size: 80px;
-        margin-bottom: 10px;
-    }
-    .hps{
-        font-size: 25px;
-    }
-    .sv-button {
-        font-size: 26px;
-    }
-    .content-1 {
-        font-size: 45px;
-    }
-    .title-1 {
-        font-size: 27px;
-    }
-    .d-box-1 {
-        width: 80%;
-    }
-    .open-modal {
-        width: 33vw;
-    }
-
+@media (min-width: 768px) {
+  .sv-conten-title {
+    width: 54vw;
+  }
+  .sv-h2 {
+    font-size: 80px;
+    margin-bottom: 10px;
+  }
+  .hps {
+    font-size: 25px;
+  }
+  .sv-button {
+    font-size: 26px;
+  }
+  .content-1 {
+    font-size: 45px;
+  }
+  .title-1 {
+    font-size: 27px;
+  }
+  .d-box-1 {
+    width: 80%;
+  }
+  .open-modal {
+    width: 33vw;
+  }
 }
 /* Đội tàu  */
-.f-conten {
-  height: 40vw;
+.f-content {
+  height: 30vw;
   width: 100%;
-  background-image: url(../assets/doitau.jpg);
+  background-image: url('../assets/bg-ships.png');
   background-size: 100%;
-  gap: 10px;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
-.f-h1 {
-  font-size: 7vw;
-  color: #405e87;
-  padding-right: 10vw;
-  margin-bottom: 10vw;
-  font-family: Oswald Bold Bold;
-  font-weight: 600;
+
+.ship-page-title {
+  font-size: 46px;
+  font-family: 'SVN-Gilory-Bold';
+  color: #205599;
+}
+
+.ship-page-content {
+  color: #808284;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+.ship-page-content-custom {
+  color: #205599;
+  font-family: 'SVN-Gilory-Bold';
+}
+
+.ship-page-body-title {
+  color: #205599;
+  font-family: 'SVN-Gilory-Bold';
+  font-size: 22px;
 }
 
 .d-item-fleet {
@@ -286,7 +292,6 @@
 }
 .title {
   word-wrap: break-word;
-  font-size: ;
   font-weight: 300;
   padding: 0 5px;
   margin-top: 17px;
@@ -305,6 +310,20 @@
 .fleet-box {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .f-content {
+    height: 40vw;
+  }
+
+  .ship-page-title {
+    font-size: 36px;
+  }
+
+  .ship-page-content {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {
