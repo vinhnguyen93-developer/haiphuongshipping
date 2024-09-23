@@ -27,29 +27,6 @@
 </head>
   <body>
     <div>
-      <header class="header d-none d-md-block">
-        <div class="container d-flex align-items-center justify-content-between h-100">
-          <div class="d-flex">
-            <a href="tel:+84 945.776.999" class="d-flex me-5">
-              <div class="me-3">
-                <i class="fa-solid fa-phone text-white"></i>
-              </div>
-              <h3 class="text-white">+84 945.776.999</h3>
-            </a>
-            <a href="mailto:global@haiphuongshipping.com" class="d-flex">
-              <div class="me-3">
-                <i class="fa-solid fa-envelope text-white"></i>
-              </div>
-              <h3 class="text-white">global@haiphuongshipping.com</h3>
-            </a>
-          </div>
-
-          <a href="https://www.facebook.com/Haiphuong0505" target="blank" class="header-icon-facebook">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-        </div>
-      </header>
-
       <?php
         $path = $_SERVER['REQUEST_URI'];
         $path_name;
@@ -61,7 +38,7 @@
         }
       ?>
 
-      <nav id="navbar-sticky" class="navbar-container bg-white">
+      <nav id="navbar-sticky" class="navbar-container bg-white sticky">
         <div class="container d-flex align-items-center justify-content-between">
           <a href="/">
             <img class="navbar-logo" src="<?php bloginfo('template_url'); ?>/assets/haiphuong_logo.jpg" alt="Hai Phuong Logo">
@@ -95,10 +72,6 @@
               </div>
               <div role="button">
                 <img width="40" src="<?php bloginfo('template_url'); ?>/assets/united-kingdom.png" alt="United kingdom flag">
-              </div>
-
-              <div class="ms-4" role="button">
-                <i class="fa-solid fa-magnifying-glass"></i>
               </div>
             </div>
           </div>
@@ -147,13 +120,6 @@
                 <img width="40" src="<?php bloginfo('template_url'); ?>/assets/united-kingdom.png" alt="United kingdom flag">
               </div>
             </div>
-
-            <form class="d-flex mt-2" role="search">
-              <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
-              <button class="btn btn-outline-secondary" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </form>
           </div>
         </div>
       </nav>
