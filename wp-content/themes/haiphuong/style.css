@@ -191,7 +191,7 @@ a {
 .section-title {
   font-size: 32px;
   font-weight: 600;
-  color: #405e87;
+  color: #205599;
   position: relative;
 }
 
@@ -208,10 +208,37 @@ a {
   margin-right: auto;
 }
 
+.pagination-page {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.pagination-page .current {
+  border-color: black;
+  color: white !important;
+  background-color: #205599;
+}
+.pagination-page .page-numbers {
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #292929;
+  border-radius: 4px;
+  color: #292929;
+  margin: 0 0.3rem;
+  transition: all linear 0.25s;
+}
+.pagination-page .page-numbers:hover {
+  border-color: black;
+  color: white;
+  background-color: #205599;
+}
+
 @media (max-width: 768px) {
   .section-title {
     font-size: 26px;
     text-align: center;
-    line-height: 1.5px;
+    line-height: 1.2;
   }
 }

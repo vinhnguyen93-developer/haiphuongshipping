@@ -140,7 +140,7 @@ $ships_query = new WP_Query(array(
       <h2 class="section-title">Đội tàu công ty</h2>
     </div>
   
-    <div class="row gy-4 gy-md-0 gx-0 gx-md-4">
+    <div class="row gy-4 gy-md-0 gx-0 gx-md-5">
       <?php 
         
         if($ships_query -> have_posts()):
@@ -209,11 +209,13 @@ $ships_query = new WP_Query(array(
         $news_guid = get_the_guid();
         $news_title = get_the_title();
         $news_image_src = get_field('image', get_the_ID());
+        $news_description = get_field('description', get_the_ID());
     ?>
     <div class="col-12 col-md-4">
-      <a href="<?php echo $news_guid; ?>" class="d-block new-item pb-1">
+      <a href="<?php echo $news_guid; ?>" class="d-block new-item p-1">
         <img class="new-image" src="<?php echo $news_image_src; ?>" alt="">
-        <h2 class="new-title fw-bold lh-base mt-2"><?php echo $news_title; ?></h2>
+        <h2 class="new-title fw-bold lh-base mt-2 text-truncate mb-2"><?php echo $news_title; ?></h2>
+        <p class="new-description text-black"><?php echo $news_description; ?></p>
       </a>
     </div>
     <?php 
