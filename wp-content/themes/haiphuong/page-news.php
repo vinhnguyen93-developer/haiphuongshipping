@@ -36,7 +36,7 @@
             <img class="w-100 new-page-item-image" src="<?php echo $news_image_src; ?>" alt="">
           </div>
           <div class="col-md-8 col-12">
-            <h2 class="new-title lh-base text-truncate mb-2"><?php echo $news_title; ?></h2>
+            <h2 class="new-page-item-title lh-base text-truncate mb-2"><?php echo $news_title; ?></h2>
             <p class="mb-3 new-page-date text-black"><?php echo $new_date; ?></p>
             <p class="lh-base new-page-description text-black"><?php echo $news_description; ?></p>
             <p class="new-page-btn btn mt-4">
