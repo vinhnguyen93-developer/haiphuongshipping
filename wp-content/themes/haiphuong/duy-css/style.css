@@ -6,7 +6,7 @@
       rgba(17, 86, 178, 0.5)
     ),
     url(../assets/ft-backgroud.jpg); */
-    background: #22559D;
+  background: #22559d;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -15,7 +15,7 @@
   padding: 0px 10px 0px 10px;
 }
 .map {
-  background: #FFFFFF;
+  background: #ffffff;
   width: 158px;
   height: 158px;
   /* min-width: 452px; */
@@ -26,7 +26,6 @@
 .logo-size {
   width: 100%;
   height: auto;
-  
 }
 .information {
   width: 100%;
@@ -44,10 +43,8 @@
 .footer-h1 {
   /* margin-bottom: 20px; */
   font-size: 20px;
-  
 }
 .d-logo-footer {
-  
 }
 .title-size {
   margin-top: 13px;
@@ -120,6 +117,7 @@
   font-family: 'SVN-Gilory-Bold';
   
 }
+
 .sv-service {
   padding: 50px 10px 0px 10px ;
 }
@@ -133,11 +131,13 @@
   height: calc((100%/4)*3);
   object-fit: cover;
 
+
 }
 .sv-item {
   margin-bottom: 80px;
   flex-direction: column;
 }
+<<<<<<< HEAD
 .sv-content {
   /* margin-left: 50px; */
   padding-top: 20px;
@@ -204,24 +204,40 @@
     font-size: 20px;
   }
 
+
 }
 
 /* Đội tàu  */
-.f-conten {
-  height: 40vw;
+.f-content {
+  height: 30vw;
   width: 100%;
-  background-image: url(../assets/doitau.jpg);
+  background-image: url('../assets/bg-ships.png');
   background-size: 100%;
-  gap: 10px;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
-.f-h1 {
-  font-size: 7vw;
-  color: #405e87;
-  padding-right: 10vw;
-  margin-bottom: 10vw;
-  font-family: Oswald Bold Bold;
-  font-weight: 600;
+
+.ship-page-title {
+  font-size: 46px;
+  font-family: 'SVN-Gilory-Bold';
+  color: #205599;
+}
+
+.ship-page-content {
+  color: #808284;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+.ship-page-content-custom {
+  color: #205599;
+  font-family: 'SVN-Gilory-Bold';
+}
+
+.ship-page-body-title {
+  color: #205599;
+  font-family: 'SVN-Gilory-Bold';
+  font-size: 22px;
 }
 
 .d-item-fleet {
@@ -259,6 +275,20 @@
 .fleet-box {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .f-content {
+    height: 40vw;
+  }
+
+  .ship-page-title {
+    font-size: 36px;
+  }
+
+  .ship-page-content {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {

@@ -15,7 +15,7 @@ $news_query = new WP_Query(array(
 
 $ships_query = new WP_Query(array(
   'post_type' => 'fleet',
-  'posts_per_page' => 4,
+  'posts_per_page' => 6,
 ));
 
 ?>
@@ -140,7 +140,7 @@ $ships_query = new WP_Query(array(
       <h2 class="section-title">Đội tàu công ty</h2>
     </div>
   
-    <div class="row gy-4 gy-md-0 gx-0 gx-md-5">
+    <div class="row gy-4 gx-0 gx-md-5">
       <?php 
         
         if($ships_query -> have_posts()):
@@ -202,24 +202,55 @@ $ships_query = new WP_Query(array(
     <h2 class="section-title">Tin tức & tuyển dụng</h2>
   </div>
 
-  <div class="row gx-0 gx-md-5 gy-4 gy-md-0">
+  <div class="row g-2">
     <?php 
     if($news_query -> have_posts()):
-      while($news_query -> have_posts()): $news_query -> the_post();
+      $posts = $news_query->posts;
+      $post = $posts[0];
+      setup_postdata($post);
+      $news_guid = get_the_guid();
+      $news_title = get_the_title();
+      $news_image_src = get_field('image', get_the_ID());
+      $news_description = get_field('description', get_the_ID());
+    ?>
+    <div class="col-12 col-md-8">
+      <a href="<?php echo $news_guid; ?>" class="d-block new-item">
+        <img class="new-image" src="<?php echo $news_image_src; ?>" alt="">
+        <h2 class="new-title d-flex align-items-center ps-4 text-truncate text-white"><?php echo $news_title; ?></h2>
+        <p class="new-description text-white p-3"><?php echo $news_description; ?></p>
+      </a>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <?php
+        $post = $posts[1];
+        setup_postdata($post);
         $news_guid = get_the_guid();
         $news_title = get_the_title();
         $news_image_src = get_field('image', get_the_ID());
         $news_description = get_field('description', get_the_ID());
-    ?>
-    <div class="col-12 col-md-4">
-      <a href="<?php echo $news_guid; ?>" class="d-block new-item p-1">
+      ?>
+      <a href="<?php echo $news_guid; ?>" class="d-block new-item mb-2">
         <img class="new-image" src="<?php echo $news_image_src; ?>" alt="">
-        <h2 class="new-title fw-bold lh-base mt-2 text-truncate mb-2"><?php echo $news_title; ?></h2>
-        <p class="new-description text-black"><?php echo $news_description; ?></p>
+        <h2 class="new-title d-flex align-items-center ps-4 text-truncate text-white"><?php echo $news_title; ?></h2>
+        <p class="new-description text-white p-3"><?php echo $news_description; ?></p>
+      </a>
+
+      <?php
+        $post = $posts[2];
+        setup_postdata($post);
+        $news_guid = get_the_guid();
+        $news_title = get_the_title();
+        $news_image_src = get_field('image', get_the_ID());
+        $news_description = get_field('description', get_the_ID());
+      ?>
+      <a href="<?php echo $news_guid; ?>" class="d-block new-item">
+        <img class="new-image" src="<?php echo $news_image_src; ?>" alt="">
+        <h2 class="new-title d-flex align-items-center ps-4 text-truncate text-white"><?php echo $news_title; ?></h2>
+        <p class="new-description text-white p-3"><?php echo $news_description; ?></p>
       </a>
     </div>
-    <?php 
-      endwhile;
+    <?php
     endif;
     ?>
 
