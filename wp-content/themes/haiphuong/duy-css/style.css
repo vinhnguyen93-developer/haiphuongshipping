@@ -127,8 +127,8 @@
   position: relative;
 }
 .sv-img {
-  width: 100%;
-  height: calc((100%/4)*3);
+  width: 96vw;
+  height: auto;
   object-fit: cover;
 
 
@@ -186,6 +186,7 @@
     width: 25vw;
     height: calc((25vw/4)*3);
     object-fit: cover;
+    
   }
   .sv-content {
     margin-left: 50px;
@@ -201,7 +202,7 @@
     line-height: 2;
   }
   .d-sv-box-1 {
-    font-size: 20px;
+    font-size: 1.5vw;
   }
 
 
