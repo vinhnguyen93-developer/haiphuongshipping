@@ -79,12 +79,13 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .information {
     width: 60%;
   }
   .footer-h1 {
-    font-size: 2.5vw;
+    font-weight: 600;
+    font-size: 2vw;
   }
   .footer-p {
     font-size: 1.8vw;
@@ -105,152 +106,106 @@
   }
 }
 /* service */
-
-.sv-conten {
+.sv-title {
   height: 40vw;
   width: 100%;
-  background-image: url(../assets/svconten.png);
-  background-size: 100%;
+  background-image: url(../assets/SV-img.png);
+  background-size: 150%;
   gap: 10px;
   background-repeat: no-repeat;
 }
-.sv-conten-title {
-  height: 20vw;
-  width: 54vw;
-  margin-right: 20px;
-  background: radial-gradient(
-    rgba(198, 233, 240, 1),
-    rgba(198, 233, 240, 0) 75%
-  );
-  border-radius: 50%;
+.sv-h1 {
+  color: #22559B;
+  font-size: 6vw;
+  font-family: 'SVN-Gilory-Bold';
+  
 }
-.sv-h2 {
-  font-size: 8vw;
-  color: #0852c2;
-  padding-right: 2vw;
-  margin-bottom: 2vw;
-  font-family: Oswald Bold Bold;
-  font-weight: 600;
-}
-.hps {
-  color: #064198;
-  font-size: 3vw;
-  font-weight: 700;
-}
-
-.d-service {
-  margin-top: 5vw;
-}
-.sv-img {
-    width: auto;
-    /* height: 100%; */
-    aspect-ratio: 4/3;
-
-  /* margin-bottom: 150px; */
-}
-.sv-button {
-  background-color: transparent;
-  border: none;
-  margin: 25px 0 50px 0;
-  font-size: 20px;
-  color: #2260bd;
-  outline: none;
-  cursor: pointer;
-}
-
-.sv-1 {
-  padding: 0 10px;
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(241, 244, 248, 0.5);
-  padding: 0 20px;
-  display: none;
-}
-.modal-conten {
-  background: #ffffff;
-  width: 900px;
-  /* max-width: calc(100%-50px); */
-  min-height: 500px;
-  position: relative;
-  border-radius: 40px;
-}
-.sv-modal-open {
-  display: flex;
-}
-.sv-modal-close {
-  display: none;
-}
-.button-modal {
-  background: #cea33c;
-  color: #ffffff;
-  height: 35px;
-  width: 120px;
-  cursor: pointer;
-  margin-bottom: 30px;
-  font-weight: 500;
+.sv-service {
+  padding: 50px 10px 0px 10px ;
 }
 .d-box-1 {
-
-    width: 85%;
-    height: auto;
-    padding-top: 50px;
-    padding-bottom: 10%;
-
+  width: 100%;
+  height: calc((100%/4)*3);
+  position: relative;
+}
+.sv-img {
+  width: 100%;
+  height: calc((100%/4)*3);
+  object-fit: cover;
 
 }
-.content-1 {
-  font-size: 25px;
-  color: #2260bd;
-  font-weight: 700;
-  line-height: 1.25;
+.sv-item {
+  margin-bottom: 80px;
+  flex-direction: column;
 }
-.title-1 {
-
-    margin-top: 5px;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.75;
+.sv-content {
+  /* margin-left: 50px; */
+  padding-top: 20px;
+}
+.sv-h2-img {
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  width: 99%;
+  background-color: rgba(32, 85, 155, 0.8);
+  font-size: 1.3vw;
+}
+.d-sv-box-1 {
+  width: 70%;
+  font-size: 18px;
+}
+.sv-h2 {
+  font-size: 30px;
+  color: #22559B;
+  padding-bottom: 1vw;
+}
+.d-sv-title {
+  font-size: 16px;
+  color: #22559B;
+  font-family: 'SVN-Gilory-Light';
+  line-height: 30px;
+}
+@media (min-width: 768px) {
+  .sv-title {
+    height: 29.9vw;
     width: 100%;
+  }
+  .sv-service {
+    padding: 4vw 5vw;
+  }
+  .d-sv-title {
+    line-height: 1.5;
+    font-size: 16px;
+  }  
+  .d-box-1 {
+    width: 25vw;
+    height: calc((25vw/4)*3);
+    position: relative;
+  }
+  .sv-img {
+    width: 25vw;
+    height: calc((25vw/4)*3);
+    object-fit: cover;
+  }
+  .sv-content {
+    margin-left: 50px;
+    padding-top: 0px;
+  }
+  .sv-item {
+    flex-direction: row;
+  }
+  .d-sv-title {
+    font-size: 18px;
+    color: #22559B;
+    font-family: 'SVN-Gilory-Light';
+    line-height: 2;
+  }
+  .d-sv-box-1 {
+    font-size: 20px;
+  }
 
 }
-.open-modal {
-  width: 100vw;
-}
 
-@media (min-width:768px) {
-    .sv-conten-title{
-        width: 54vw;
-    }
-    .sv-h2{
-        font-size: 80px;
-        margin-bottom: 10px;
-    }
-    .hps{
-        font-size: 25px;
-    }
-    .sv-button {
-        font-size: 26px;
-    }
-    .content-1 {
-        font-size: 45px;
-    }
-    .title-1 {
-        font-size: 27px;
-    }
-    .d-box-1 {
-        width: 80%;
-    }
-    .open-modal {
-        width: 33vw;
-    }
-
-}
 /* Đội tàu  */
 .f-conten {
   height: 40vw;
@@ -286,7 +241,6 @@
 }
 .title {
   word-wrap: break-word;
-  font-size: ;
   font-weight: 300;
   padding: 0 5px;
   margin-top: 17px;
