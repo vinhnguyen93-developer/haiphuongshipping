@@ -35,11 +35,10 @@
   font-size: 15px;
   gap: 25px;
   /* height: 300px; */
+  line-height: 2;
 }
 
-.bi {
-  /* font-size: 38px; */
-}
+
 .footer-h1 {
   /* margin-bottom: 20px; */
   font-size: 20px;
@@ -47,7 +46,7 @@
 .d-logo-footer {
 }
 .title-size {
-  margin-top: 13px;
+  /* margin-top: 13px; */
 }
 .size {
   min-width: 95px;
@@ -60,6 +59,10 @@
 .d-menu {
   display: none;
 }
+.d-footer-p {
+  
+}
+
 
 @media (min-width: 425px) {
   .size {
@@ -69,12 +72,13 @@
     font-size: 4vw;
   }
   .footer-p {
-    font-size: 3.8vw;
+    font-size: 3.5vw;
   }
   .d-menu {
     width: 15vw;
   }
 }
+
 
 @media (min-width: 769px) {
   .information {
@@ -85,7 +89,7 @@
     font-size: 2vw;
   }
   .footer-p {
-    font-size: 1.8vw;
+    font-size: 1.7vw;
   }
   .size {
     min-width: 200px;
@@ -95,12 +99,11 @@
     min-width: 200px;
   }
   .d-menu {
-    margin-bottom: 16px;
+    line-height: 2;
     display: flex;
+    margin-bottom: 14px;
   }
-  .d-menu-item {
-    margin-top: 13px;
-  }
+  
 }
 /* service */
 .sv-title {

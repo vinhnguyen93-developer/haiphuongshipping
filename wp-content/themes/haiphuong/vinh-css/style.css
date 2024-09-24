@@ -392,6 +392,12 @@
   font-size: 46px;
 }
 
+.new-page-item-title {
+  color: #22559d;
+  font-size: 18px;
+  font-family: 'SVN-Gilory-Bold';
+}
+
 .new-page-description {
   display: -webkit-box;
   -webkit-line-clamp: 4;
