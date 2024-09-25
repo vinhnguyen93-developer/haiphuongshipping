@@ -21,54 +21,38 @@
             <div class="d-flex size d-flex align-items-center">
             <!-- <img  class="img-size"src="<?php bloginfo('template_url'); ?>/assets/gps.png" alt=""/> -->
 
-            <P class="text-white footer-p">
-            Địa chỉ giao dịch: Số 54 lô 18D Lê Hồng Phong, Phường Đằng Lâm,</P>
+            <P class="text-white footer-p d-footer-p">
+            Địa chỉ giao dịch: Số 54 lô 18D Lê Hồng Phong, Phường Đằng Lâm, Quận Hải An, TP Hải Phòng</P>
             </div>
             <div>
               <!-- <p class="text-white footer-p">Số 54 lô 18D Lê Hồng Phong, Phường Đằng Lâm, Quận Hải An, TP Hải Phòng
               </p> -->
             </div>
           </div>
-          <div class="title-size d-flex align-items-center">
+          <!-- <div class="title-size d-flex align-items-center">
             <div class="d-flex size d-flex align-items-center">
-            <!-- <img  class="img-size"src="<?php bloginfo('template_url'); ?>/assets/gps.png" alt=""/> -->
-
             <P class="text-white footer-p">
             Quận Hải An, TP Hải Phòng</P>
             </div>
-            <div>
-              <!-- <p class="text-white footer-p">Số 54 lô 18D Lê Hồng Phong, Phường Đằng Lâm, Quận Hải An, TP Hải Phòng
-              </p> -->
-            </div>
-          </div>
+            
+          </div> -->
           <div class="title-size d-flex align-items-center">
-            <div class="d-flex size d-flex align-items-center"> 
-                <!-- <img class="img-size" src="<?php bloginfo('template_url'); ?>/assets/mail.png" alt=""/>
-     -->
-                <p class="text-white footer-p">
-                Email:</p>
-            </div>
+            
               <div>
               <a href="mailto:global@haiphuongshipping.com" class="d-flex">
                 <p class="text-white footer-p">
-                global@haiphuongshipping.com
+                Email: global@haiphuongshipping.com
                 </p>
               </a>
               </div>
           </div>
           
           <div class="title-size d-flex align-items-center">
-              <div class="d-flex size d-flex align-items-center" >
-                <!-- <img  class="img-size"src="<?php bloginfo('template_url'); ?>/assets/phone.png" alt=""/>
-     -->
-                <p class="text-white footer-p">
-                Điện Thoại:
-                </p>
-              </div>
+              
                 <div>
                 <a href="tel:+84 945.776.999" class="d-flex me-5">
                   <p class="text-white footer-p">
-                    +84 945.776.999
+                  Điện Thoại: +84 945.776.999
                   </p>
                 </a>
                 </div>
