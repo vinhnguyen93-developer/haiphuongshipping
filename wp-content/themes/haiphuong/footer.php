@@ -64,19 +64,19 @@
       
     </div>
     <div class="d-menu ms-auto p-2 flex-column justify-content-center align-items-end">
-      <a class="text-white footer-p" href="">
+      <a class="text-white footer-p" href="<?php echo site_url('/intro'); ?>">
         Về chúng tôi
       </a>
-      <a class="d-menu-item text-white footer-p" href="">
+      <a class="d-menu-item text-white footer-p" href="<?php echo site_url('/fleet'); ?>">
         Đội tàu
       </a>
-      <a class="d-menu-item text-white footer-p" href="">
+      <a class="d-menu-item text-white footer-p"href="<?php echo site_url('/service'); ?>">
         Dịch vụ
       </a>
-      <a class="d-menu-item text-white footer-p" href="">
+      <a class="d-menu-item text-white footer-p" href="<?php echo site_url('/news'); ?>">
         Tuyển dụng
       </a>
-      <a class="d-menu-item text-white footer-p" href="">
+      <a class="d-menu-item text-white footer-p" href="<?php echo site_url('/news'); ?>">
         Tin Tức
       </a>
     </div>
