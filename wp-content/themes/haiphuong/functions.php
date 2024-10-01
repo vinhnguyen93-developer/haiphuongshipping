@@ -288,3 +288,43 @@ return count( $comments_by_type['comment'] );
 return $count;
 }
 }
+add_action( 'login_head', 'wpshare247_change_login_logo' );
+function wpshare247_change_login_logo(){
+?>
+<style type="text/css">   
+   	body.login div#login h1 a {
+        background-image: url("<?php echo get_theme_file_uri( '/assets/logo.png' ); ?>"); 
+        padding: 0;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        width: 100%;
+    }
+</style>
+<?php
+}
+function wpshare247_url_login(){
+    return get_site_url();
+}
+add_filter('login_headerurl', 'wpshare247_url_login');
+
+function wpb_custom_logo() {
+	echo '
+	<style type="text/css">
+	#wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
+	background-image: url(' . get_bloginfo('stylesheet_directory') . '/assets/logo.png) !important;
+	background-position: 0 0;
+	color:rgba(0, 0, 0, 0);
+	background-size: 20px;
+    background-repeat: no-repeat;
+	}
+	#wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon {
+	background-position: 0 0;
+	}
+	</style>
+	';
+}
+	 
+add_action('wp_before_admin_bar_render', 'wpb_custom_logo');
+?>
