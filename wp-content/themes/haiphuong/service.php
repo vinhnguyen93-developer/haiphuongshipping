@@ -12,7 +12,7 @@ $service_query = new WP_Query(array(
 
 ?>
 <div class="sv-title d-flex justify-content-center align-items-center">
-    <h1 class="sv-h1">
+    <h1 class="sv-h1 fs-1">
         DỊCH VỤ
     </h1>
 </div>
