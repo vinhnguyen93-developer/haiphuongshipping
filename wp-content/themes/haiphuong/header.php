@@ -67,12 +67,12 @@
             </ul>
 
             <div class="d-flex align-items-center ms-3">
-              <div class="me-2" role="button">
+              <a href="<?php echo site_url('/'); ?>" class="me-2" >
                 <img width="40" src="<?php bloginfo('template_url'); ?>/assets/vietnam.png" alt="vietnam flag">
-              </div>
-              <div role="button">
+              </a>
+              <a a href="<?php echo site_url('/en'); ?>">
                 <img width="40" src="<?php bloginfo('template_url'); ?>/assets/united-kingdom.png" alt="United kingdom flag">
-              </div>
+              </a>
             </div>
           </div>
 
@@ -113,12 +113,12 @@
             </ul>
 
             <div class="d-flex align-items-center">
-              <div class="me-2" role="button">
+              <a href="<?php echo site_url('/'); ?>" class="me-2">
                 <img width="40" src="<?php bloginfo('template_url'); ?>/assets/vietnam.png" alt="vietnam flag">
-              </div>
-              <div role="button">
+              </a>
+              <a href="<?php echo site_url('/en'); ?>">
                 <img width="40" src="<?php bloginfo('template_url'); ?>/assets/united-kingdom.png" alt="United kingdom flag">
-              </div>
+              </a>
             </div>
           </div>
         </div>
