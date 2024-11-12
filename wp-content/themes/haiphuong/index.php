@@ -22,9 +22,9 @@ $ships_query = new WP_Query(array(
 
 <div class="bg-top">
   <section>
-    <div class="container py-5">
+    <div class="container-d py-5">
       <div class="text-center bg-top-container">
-        <div class="bg-top-wrap-title">
+        <!-- <div class="bg-top-wrap-title">
           <h1 class="cover-top-title mb-3 text-uppercase">sharing experience</h1>
           <h1 class="cover-top-title text-uppercase">serving excellence</h1>
         </div>
@@ -32,7 +32,7 @@ $ships_query = new WP_Query(array(
         <div class="mt-4">
           <h3 class="mb-3 bg-top-sub-title">Hai Phuong Shipping</h3>
           <a class="btn bg-top-btn" href="<?php echo site_url('/contact'); ?>">Liên hệ ngay</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

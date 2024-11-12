@@ -25,6 +25,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  
   z-index: 100;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
@@ -60,11 +61,14 @@
 .navbar-item-active {
   border-bottom: 2px solid #d19e37;
 }
+.container-d {
+  height: 35vw;
+}
 
 .bg-top {
-  background-image: url('../assets/bg-top.jpg');
+  background-image: url('../assets/index.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 35vw;
 }
 
 .bg-top-container {
