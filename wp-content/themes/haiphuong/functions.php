@@ -260,6 +260,46 @@ function cw_post_type_news() {
 }
 add_action('init', 'cw_post_type_news');
 
+/*Custom Post type slide top start*/
+function cw_post_type_slide() {
+	$supports = array(
+		'title', // post title
+		'editor', // post content
+		'author', // post author
+		'thumbnail', // featured images
+		'custom-fields', // custom fields
+		'revisions', // post revisions
+		'post-formats', // post form
+	);
+	$labels = array(
+		'name' => _x('Slide top', 'slide'),
+		'singular_name' => _x('Slide top', 'singular'),
+		'menu_name' => _x('Slide top', 'admin menu'),
+		'name_admin_bar' => _x('Slide top', 'admin bar'),
+		'add_new' => _x('Thêm ảnh', 'add new'),
+		'add_new_item' => __('Thêm ảnh mới'),
+		'new_item' => __('New item'),
+		'edit_item' => __('Edit item'),
+		'view_item' => __('View item'),
+		'all_items' => __('Tất cả ảnh'),
+		'search_items' => __('Search item'),
+		'not_found' => __('Not found'),
+		);
+	$args = array(
+		'supports' => $supports,
+		'labels' => $labels,
+		'public' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'slide'),
+		'has_archive' => false,
+		'hierarchical' => false,
+		'menu_position' => 6,
+		'taxonomies' => array('category', 'post_tag'),
+	);
+	register_post_type('slide', $args);
+}
+add_action('init', 'cw_post_type_slide');
+
 add_action( 'wp_head', 'blankslate_pingback_header' );
 function blankslate_pingback_header() {
 if ( is_singular() && pings_open() ) {

@@ -20,90 +20,78 @@ $ships_query = new WP_Query(array(
 
 ?>
 
-<div class="bg-top">
-  <section>
-    <div class="container-d py-5">
-      <div class="text-center bg-top-container">
-        <!-- <div class="bg-top-wrap-title">
-          <h1 class="cover-top-title mb-3 text-uppercase">sharing experience</h1>
-          <h1 class="cover-top-title text-uppercase">serving excellence</h1>
-        </div>
-  
-        <div class="mt-4">
-          <h3 class="mb-3 bg-top-sub-title">Hai Phuong Shipping</h3>
-          <a class="btn bg-top-btn" href="<?php echo site_url('/contact'); ?>">Liên hệ ngay</a>
-        </div> -->
-      </div>
-    </div>
-  </section>
-  
-  <section class="py-4 why">
-    <div class="d-flex justify-content-center mb-5">
-      <h2 class="section-title">Tại sao chọn chúng tôi?</h2>
-    </div>
-  
-    <div class="container">
-      <div class="row gx-0 gx-md-5 gy-md-0 gy-4">
-        <div class="col-12 col-md-4">
-          <div class="why-item px-2 px-md-3 py-4 text-center">
-            <img class="mb-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/goal.png" alt="Goal" >
-            <div>
-              <h3 class="why-item-title fw-medium">Giải pháp vận chuyển</h3>
-              <p class="why-item-text fw-light mt-2 lh-base">
-                Chúng tôi cung cấp các phương thức giao hàng thuận tiện và tiết kiệm cho từng dự án.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="why-item px-2 px-md-3 py-4 text-center">
-            <img class="mb-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/analytic.png" alt="Analytic" >
-            <div>
-              <h3 class="why-item-title fw-medium">Chất lượng đảm bảo</h3>
-              <p class="why-item-text fw-light mt-2 lh-base">
-                Với mục đích cung cấp dịch vụ vận chuyển hàng hóa chất lượng cao.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="why-item px-2 px-md-3 py-4 text-center">
-            <img class="mb-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/focus.png" alt="Focus" >
-            <div>
-              <h3 class="why-item-title fw-medium">Điều kiện thanh toán</h3>
-              <p class="why-item-text fw-light mt-2 lh-base">
-                Chúng tôi cung cấp cho mỗi khách hàng thanh toán cước vận chuyển thuận lợi.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="py-4 about-us">
-    <div class="container">
-      <div class="row gx-3 gy-md-0 gy-4 align-items-center">
-        <div class="col-12 col-md-4">
+<section>
+  <div class="slide-top">
+    <?php get_template_part('slide') ?>
+  </div>
+</section>
+
+<section class="py-4 why">
+  <div class="d-flex justify-content-center mb-5">
+    <h2 class="section-title">Tại sao chọn chúng tôi?</h2>
+  </div>
+
+  <div class="container">
+    <div class="row gx-0 gx-md-5 gy-md-0 gy-4">
+      <div class="col-12 col-md-4">
+        <div class="why-item px-2 px-md-3 py-4 text-center">
+          <img class="mb-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/goal.png" alt="Goal" >
           <div>
-            <img class="about-us-image" src="<?php bloginfo('template_url'); ?>/assets/hp-office.png" alt="Hải Phương Office">
+            <h3 class="why-item-title fw-medium">Giải pháp vận chuyển</h3>
+            <p class="why-item-text fw-light mt-2 lh-base">
+              Chúng tôi cung cấp các phương thức giao hàng thuận tiện và tiết kiệm cho từng dự án.
+            </p>
           </div>
         </div>
-        <div class="col-12 col-md-8">
-          <div class="text-center text-md-start px-3 px-md-0">
-            <h2 class="section-title mb-5 about-us-title text-white">Về chúng tôi</h2>
-            <h3 class="about-us-sub-title text-white mb-1 text-start">
-              Thành lập vào 31 tháng 5 năm 2018, Công ty TNHH vận tải biển Hải Phương (Hai Phuong Shipping Co., Ltd - HPS) ra đời với sứ mệnh phục vụ vận chuyển hàng hóa nội thủy và vận tải biển quốc tế với dịch vụ tốt nhất, đưa ra những giải pháp hữu ích nhất cho khách hàng.
-            </h3>
-            <p class="about-us-sub-title text-white text-start">
-              Với phương châm "Sharing Experience, Serving Excellence!" - "Chia sẻ hết mình, Phục vụ tận tình!" đội ngũ HPS luôn nỗ lực trau dồi, ý thức sứ mệnh và cam kết hỗ trợ, đáp ứng mọi nhu cầu của khách hàng ngày càng tốt hơn.
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="why-item px-2 px-md-3 py-4 text-center">
+          <img class="mb-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/analytic.png" alt="Analytic" >
+          <div>
+            <h3 class="why-item-title fw-medium">Chất lượng đảm bảo</h3>
+            <p class="why-item-text fw-light mt-2 lh-base">
+              Với mục đích cung cấp dịch vụ vận chuyển hàng hóa chất lượng cao.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="why-item px-2 px-md-3 py-4 text-center">
+          <img class="mb-3" width="64" src="<?php bloginfo('template_url'); ?>/assets/focus.png" alt="Focus" >
+          <div>
+            <h3 class="why-item-title fw-medium">Điều kiện thanh toán</h3>
+            <p class="why-item-text fw-light mt-2 lh-base">
+              Chúng tôi cung cấp cho mỗi khách hàng thanh toán cước vận chuyển thuận lợi.
             </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
+
+<section class="py-4 about-us">
+  <div class="container">
+    <div class="row gx-3 gy-md-0 gy-4 align-items-center">
+      <div class="col-12 col-md-4">
+        <div>
+          <img class="about-us-image" src="<?php bloginfo('template_url'); ?>/assets/hp-office.png" alt="Hải Phương Office">
+        </div>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="text-center text-md-start px-3 px-md-0">
+          <h2 class="section-title mb-5 about-us-title text-white">Về chúng tôi</h2>
+          <h3 class="about-us-sub-title text-white mb-1 text-start">
+            Thành lập vào 31 tháng 5 năm 2018, Công ty TNHH vận tải biển Hải Phương (Hai Phuong Shipping Co., Ltd - HPS) ra đời với sứ mệnh phục vụ vận chuyển hàng hóa nội thủy và vận tải biển quốc tế với dịch vụ tốt nhất, đưa ra những giải pháp hữu ích nhất cho khách hàng.
+          </h3>
+          <p class="about-us-sub-title text-white text-start">
+            Với phương châm "Sharing Experience, Serving Excellence!" - "Chia sẻ hết mình, Phục vụ tận tình!" đội ngũ HPS luôn nỗ lực trau dồi, ý thức sứ mệnh và cam kết hỗ trợ, đáp ứng mọi nhu cầu của khách hàng ngày càng tốt hơn.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="py-4 container">
   <div class="pt-2">

@@ -28,6 +28,16 @@ $(document).ready(function () {
     $('#fleet-content').text(textContent);
   });
 
+  $('.slide-top').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    lazyLoad: 'progressive',
+    speed: 800,
+    arrows: false,
+  });
+
   $('.comments-slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

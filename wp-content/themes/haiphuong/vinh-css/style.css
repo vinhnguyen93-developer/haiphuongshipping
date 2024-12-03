@@ -121,6 +121,12 @@
   color: white;
 }
 
+.slide-top-image {
+  object-fit: cover;
+  width: 100%;
+  height: 40vw;
+}
+
 .why {
   background-color: #f5f7f8;
 }
