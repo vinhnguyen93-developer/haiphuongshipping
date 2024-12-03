@@ -8,7 +8,7 @@ $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
 $ship_query = new WP_Query(array(
     'post_type' => 'fleet',
-    'posts_per_page' => 10,
+    'posts_per_page' => 100,
     'paged' => $paged,
 ));
 

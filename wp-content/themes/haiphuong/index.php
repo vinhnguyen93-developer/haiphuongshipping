@@ -21,9 +21,9 @@ $ships_query = new WP_Query(array(
 ?>
 
 <section>
-  <div class="slide-top">
-    <?php get_template_part('slide') ?>
-  </div>
+  <?php
+  echo do_shortcode('[smartslider3 slider="2"]');
+  ?>
 </section>
 
 <section class="py-4 why">
